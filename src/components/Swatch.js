@@ -21,6 +21,7 @@ export default class Swatch extends Component{
   render(){
     let {rgb, colorId} = this.props
     let hex = this.rgb2hex(rgb)
+    hex = hex.toUpperCase()
     return(
       <div className="swatch" style={{backgroundColor: hex}} onClick={this.copy.bind(this, hex)}>
         <div className="swatchInner">

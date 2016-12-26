@@ -1,5 +1,6 @@
 import {EventEmitter} from 'events'
 import * as SortConst from '../constants/SortConst'
+import * as FilterConst from '../constants/FilterConst'
 import dispatcher from "../dispatcher"
 import penData from '../Pens.json'
 
@@ -8,16 +9,28 @@ class PenStore extends EventEmitter {
   constructor(){
     super()
     this.pens = penData
+    this.filterFlag = FilterConst.ALL
+    this.sortFlag = SortConst.ORG
   }
 
   getPenList(){
     let pens = []
+    this.sortPens(this.sortFlag)
+    this.filterPens(this.filterFlag)
     for(let p of this.pens){
       if(p.visible){
         pens.push(p)
       }
     }
     return pens
+  }
+
+  getFilter(){
+    return this.filterFlag
+  }
+
+  getSort(){
+    return this.sortFlag
   }
 
   sortPens(sortFlag){
@@ -52,15 +65,12 @@ class PenStore extends EventEmitter {
     switch (sortFlag) {
       case SortConst.COLOR:
         this.pens.sort(colorIdSort)
-        this.emit("change")
         break;
       case SortConst.NAME:
         this.pens.sort(nameSort)
-        this.emit("change")
         break;
       case SortConst.ORG:
         this.pens.sort(orgIdSort)
-        this.emit("change")
         break;
       default:
 
@@ -75,16 +85,17 @@ class PenStore extends EventEmitter {
         e.visible = false;
       }
     }
-    this.emit("change")
   }
 
   handleActions(action){
     switch (action.type) {
       case "FILTER_PENS":
-        this.filterPens(action.filterFlag)
+        this.filterFlag = action.filterFlag
+        this.emit("change")
         break;
       case "SORT_PENS":
-        this.sortPens(action.sortFlag)
+        this.sortFlag = action.sortFlag
+        this.emit("change")
         break;
       default:
     }
