@@ -18,12 +18,11 @@
 
 .buttonGroup{
   margin: 15px;
-  display: flex;
-  flex-direction: row;
 }
 
 .buttonSubGroup{
   padding: 10px;
+  float: left;
 }
 
 .buttonGroup button{
@@ -36,7 +35,6 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 
 .buttonGroup button:hover{

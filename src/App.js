@@ -1,110 +1,45 @@
 import React, { Component } from 'react';
 import Notifications from 'react-notify-toast'
+import { StickyContainer, Sticky } from 'react-sticky';
 import './App.css';
-import uuid from 'uuid'
+import * as Actions from './actions/Actions'
 import Pen from './components/Pen'
 import Header from './components/Header'
-import colorData from './Pens.json'
+import * as SortConst from './constants/SortConst'
+import * as FilterConst from './constants/FilterConst'
+import PenStore from './stores/PenStore'
 
 class App extends Component {
 
-  constructor(){
-    super();
-    let data = colorData;
-    // data = this.organizeData(data)
-    this.state={
-      pens: data
-    }
+  updatePenList(){
+    this.setState({
+      pens: PenStore.getPenList()
+    })
   }
 
-  organizeData(data){
-    let i = 0;
-    for(let e of data){
-      e.orgId = i;
-      i++;
-      e.colorId = e.id
-      e.id = uuid.v4();
-      e.colorText = e.textColor
-      delete(e.textColor)
-      delete(e.cmykv)
-      delete(e.rgbp)
-      delete(e.rgbv)
-      e.rgb = e.rgb.split(',')
-      e.cmyk = e.cmyk.split(',')
-      for(let f = 0; f<3; f++){
-        e.rgb[f] = parseInt(e.rgb[f], 10)
-      }
-      for(let f = 0; f<4; f++){
-        e.cmyk[f] = parseInt(e.cmyk[f], 10)
-      }
-    }
-    console.log(JSON.stringify(data))
-    return data
-
+  componentWillMount(){
+    PenStore.on("change", this.updatePenList.bind(this))
+    this.updatePenList();
   }
 
-  sortPens(flag){
-
-    function colorIdSort(a,b){
-      if(a.colorId > b.colorId){
-        return 1
-      }else if(a.colorId < b.colorId){
-        return -1
-      }
-      return 0
-    }
-
-    function nameSort(a,b){
-      if(a.name > b.name){
-        return 1
-      }else if(a.name < b.name){
-        return -1
-      }
-      return 0
-    }
-
-    function orgIdSort(a,b){
-      if(a.orgId > b.orgId){
-        return 1
-      }else if(a.orgId < b.orgId){
-        return -1
-      }
-      return 0
-    }
-
-    switch (flag) {
-      case "COLOR_ID":
-        this.setState({
-          pens: this.state.pens.sort(colorIdSort)
-        })
-        break;
-      case "NAME":
-        this.setState({
-          pens: this.state.pens.sort(nameSort)
-        })
-        break;
-      case "ORG_ID":
-        this.setState({
-          pens: this.state.pens.sort(orgIdSort)
-        })
-        break;
-      default:
-
-    }
+  componentWillUnmount(){
+    PenStore.removeListener("change", this.updatePenList)
   }
 
-  filterPens(f){
-    this.setState({f})
-  }
-
-  renderPens(data, f){
+  renderPens(){
     let pens = []
-    for(let p of data){
-      if((f && p.groups[f]) || !f){
+    for(let p of this.state.pens){
         pens.push(<Pen key={p.id} name={p.name} colorId={p.colorId} rgb={p.rgb} />)
-      }
     }
     return pens
+  }
+
+  sortPens(sortFlag){
+    Actions.sortPens(sortFlag);
+  }
+
+  filterPens(filterFlag){
+    Actions.filterPens(filterFlag);
   }
 
   renderButtons(){
@@ -112,18 +47,18 @@ class App extends Component {
 
     <div className="buttonGroup">
       <div className="buttonSubGroup">
-        <button onClick={this.sortPens.bind(this, "COLOR_ID")}>Color ID</button>
-        <button onClick={this.sortPens.bind(this, "NAME")}>Name</button>
-        <button onClick={this.sortPens.bind(this, "ORG_ID")}>Relatedness</button>
+        <button onClick={this.sortPens.bind(this, SortConst.COLOR)}>Color ID</button>
+        <button onClick={this.sortPens.bind(this, SortConst.NAME)}>Name</button>
+        <button onClick={this.sortPens.bind(this, SortConst.ORG)}>Relatedness</button>
       </div>
       <div className="buttonSubGroup">
-        <button onClick={this.filterPens.bind(this,"200")}>All</button>
-        <button onClick={this.filterPens.bind(this,"Portrait")}>Portrait</button>
-        <button onClick={this.filterPens.bind(this,"PrimarySecondary")}>Primary Secondary</button>
-        <button onClick={this.filterPens.bind(this,"CoolGrey")}>Cool Grey</button>
-        <button onClick={this.filterPens.bind(this,"WarmGrey")}>Warm Grey</button>
-        <button onClick={this.filterPens.bind(this,"NeutralGrey")}>Neutral Grey</button>
-        <button onClick={this.filterPens.bind(this,"FrenchGrey")}>French Grey</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.ALL)}>All</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.PORTRAIT)}>Portrait</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.PRIMARYSECONDARY)}>Primary Secondary</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.COOLGREY)}>Cool Grey</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.WARMGREY)}>Warm Grey</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.NEUTRALGREY)}>Neutral Grey</button>
+        <button onClick={this.filterPens.bind(this, FilterConst.FRENCHGREY)}>French Grey</button>
       </div>
     </div>
     )
@@ -132,13 +67,17 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+      <StickyContainer>
         <Notifications/>
+        <Sticky>
         <Header/>
+        </Sticky>
         {this.renderButtons()}
         <div className="wrap">
-          {this.renderPens(this.state.pens, this.state.f)}
+          {this.renderPens()}
         </div>
         <p className="credit">based on data from <a href="http://swatchtool.com"> swatchtool.com </a></p>
+        </StickyContainer>
       </div>
     );
   }

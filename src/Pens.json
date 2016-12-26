@@ -1,5 +1,6 @@
 [{
         "id": "f86d8a78-3568-42fd-9a5e-93fff6381e8c",
+        "visible": true,
         "name": "Cream",
         "rgb": [252, 255, 212],
         "cmyk": [1, 0, 17, 0],
@@ -12,6 +13,7 @@
         "colorText": "black"
     }, {
         "id": "41f5bf34-d45e-4963-804e-fb5550200f98",
+        "visible": true,
         "name": "Deco Yellow",
         "rgb": [245, 245, 140],
         "cmyk": [4, 4, 45, 0],
@@ -23,6 +25,7 @@
         "colorText": "black"
     }, {
         "id": "c468d097-2888-4e4c-bb46-e1dd98f5b578",
+        "visible": true,
         "name": "Canary Yellow",
         "rgb": [247, 247, 3],
         "cmyk": [3, 3, 99, 0],
@@ -35,6 +38,7 @@
         "colorText": "black"
     }, {
         "id": "14bc8ad5-cae5-4530-bd33-5c168824c317",
+        "visible": true,
         "name": "Tulip Yellow",
         "rgb": [252, 240, 89],
         "cmyk": [1, 6, 65, 0],
@@ -46,6 +50,7 @@
         "colorText": "black"
     }, {
         "id": "6b780e9f-d68d-4100-92c0-800530fee557",
+        "visible": true,
         "name": "Sunburst Yellow",
         "rgb": [250, 240, 51],
         "cmyk": [2, 6, 80, 0],
@@ -57,6 +62,7 @@
         "colorText": "black"
     }, {
         "id": "64a72dcf-4d47-4e5a-a103-c295af561450",
+        "visible": true,
         "name": "Jasmine",
         "rgb": [255, 212, 115],
         "cmyk": [0, 17, 55, 0],
@@ -68,6 +74,7 @@
         "colorText": "black"
     }, {
         "id": "766140aa-bb71-41db-8583-81967cb78ecf",
+        "visible": true,
         "name": "Yellow Ochre",
         "rgb": [252, 212, 3],
         "cmyk": [1, 17, 99, 0],
@@ -79,6 +86,7 @@
         "colorText": "black"
     }, {
         "id": "cfea43b9-2961-4e49-9a00-dc4a19cb2a24",
+        "visible": true,
         "name": "Spanish Orange",
         "rgb": [252, 212, 3],
         "cmyk": [1, 17, 99, 0],
@@ -90,6 +98,7 @@
         "colorText": "black"
     }, {
         "id": "f1de68fa-9263-4715-8f23-ca81331076fd",
+        "visible": true,
         "name": "Yellow Orange",
         "rgb": [252, 168, 3],
         "cmyk": [1, 34, 99, 0],
@@ -102,6 +111,7 @@
         "colorText": "black"
     }, {
         "id": "d3c2c046-393a-4973-805e-7c1bc88fab3f",
+        "visible": true,
         "name": "Pale Vermilion",
         "rgb": [255, 107, 18],
         "cmyk": [0, 58, 93, 0],
@@ -113,6 +123,7 @@
         "colorText": "black"
     }, {
         "id": "567e2732-7343-4e7f-8267-b0103a408d34",
+        "visible": true,
         "name": "Orange",
         "rgb": [255, 140, 3],
         "cmyk": [0, 45, 99, 0],
@@ -124,6 +135,7 @@
         "colorText": "white"
     }, {
         "id": "35b502e2-7a95-4137-b319-b1e0c0b610a4",
+        "visible": true,
         "name": "Poppy Red",
         "rgb": [255, 84, 61],
         "cmyk": [0, 67, 76, 0],
@@ -135,6 +147,7 @@
         "colorText": "black"
     }, {
         "id": "75bf47ca-9ccd-4644-aa68-24db5498e5ae",
+        "visible": true,
         "name": "Deco Orange",
         "rgb": [255, 186, 140],
         "cmyk": [0, 27, 45, 0],
@@ -146,6 +159,7 @@
         "colorText": "black"
     }, {
         "id": "e8fa32d1-fa55-4755-a973-1f305caa035c",
+        "visible": true,
         "name": "Goldenrod",
         "rgb": [237, 166, 112],
         "cmyk": [7, 35, 56, 0],
@@ -157,6 +171,7 @@
         "colorText": "black"
     }, {
         "id": "61e95a58-8308-4525-866b-1e997d53a632",
+        "visible": true,
         "name": "Burnt Ochre",
         "rgb": [245, 166, 64],
         "cmyk": [4, 35, 75, 0],
@@ -168,6 +183,7 @@
         "colorText": "black"
     }, {
         "id": "aada359e-8521-4ed0-8562-e22b047dbde4",
+        "visible": true,
         "name": "Mineral Orange",
         "rgb": [255, 168, 48],
         "cmyk": [0, 34, 81, 0],
@@ -179,6 +195,7 @@
         "colorText": "black"
     }, {
         "id": "44a67782-1a72-469f-b554-59254ddc4870",
+        "visible": true,
         "name": "Pumpkin Orange",
         "rgb": [222, 83, 43],
         "cmyk": [12, 67, 83, 1],
@@ -190,6 +207,7 @@
         "colorText": "white"
     }, {
         "id": "1aa45f08-5b33-4bd5-b54c-86242cc6559a",
+        "visible": true,
         "name": "Deco Peach",
         "rgb": [255, 222, 222],
         "cmyk": [0, 13, 13, 0],
@@ -201,6 +219,7 @@
         "colorText": "black"
     }, {
         "id": "75a5fefe-c3e5-4477-a776-0243b9eb3070",
+        "visible": true,
         "name": "Light Peach",
         "rgb": [255, 222, 212],
         "cmyk": [0, 13, 17, 0],
@@ -213,6 +232,7 @@
         "colorText": "black"
     }, {
         "id": "a14d100c-a7f6-4648-a7e5-128485a06db5",
+        "visible": true,
         "name": "Salmon Pink",
         "rgb": [255, 196, 184],
         "cmyk": [0, 23, 28, 0],
@@ -224,6 +244,7 @@
         "colorText": "black"
     }, {
         "id": "55ea0eb8-2db9-4494-9206-aebb4d4483cf",
+        "visible": true,
         "name": "Peach",
         "rgb": [255, 140, 140],
         "cmyk": [0, 45, 45, 0],
@@ -236,6 +257,7 @@
         "colorText": "black"
     }, {
         "id": "3ebd5502-b9ac-4e46-ae72-422709c67e9e",
+        "visible": true,
         "name": "Brick Beige",
         "rgb": [252, 222, 196],
         "cmyk": [1, 13, 23, 0],
@@ -248,6 +270,7 @@
         "colorText": "black"
     }, {
         "id": "1f9ab48b-1d42-4464-86b4-b94ee0be90d1",
+        "visible": true,
         "name": "Sand",
         "rgb": [237, 196, 140],
         "cmyk": [7, 23, 45, 0],
@@ -259,6 +282,7 @@
         "colorText": "black"
     }, {
         "id": "70ed9686-275e-422c-ae9d-51f044e3147f",
+        "visible": true,
         "name": "Walnut",
         "rgb": [219, 148, 133],
         "cmyk": [14, 42, 48, 0],
@@ -270,6 +294,7 @@
         "colorText": "black"
     }, {
         "id": "acaae469-5248-421f-bcb3-64072dc90ddb",
+        "visible": true,
         "name": "Sienna Brown",
         "rgb": [212, 106, 114],
         "cmyk": [16, 58, 55, 1],
@@ -282,6 +307,7 @@
         "colorText": "black"
     }, {
         "id": "201b9a64-c3af-43f4-b2ee-f51c39e5c0a7",
+        "visible": true,
         "name": "Mahogany Red",
         "rgb": [105, 22, 91],
         "cmyk": [42, 88, 50, 29],
@@ -293,6 +319,7 @@
         "colorText": "white"
     }, {
         "id": "d9a6fd98-d10d-4725-9e67-cc83e90b4692",
+        "visible": true,
         "name": "Dark Umber",
         "rgb": [57, 23, 22],
         "cmyk": [43, 77, 78, 61],
@@ -305,6 +332,7 @@
         "colorText": "white"
     }, {
         "id": "b8e7cf9e-03e0-4307-8856-33c9feb8c0b6",
+        "visible": true,
         "name": "Terra Cotta",
         "rgb": [237, 107, 112],
         "cmyk": [7, 58, 56, 0],
@@ -316,6 +344,7 @@
         "colorText": "black"
     }, {
         "id": "7c8d1e3a-f542-4e5d-95bc-c9468164954d",
+        "visible": true,
         "name": "Cherry",
         "rgb": [222, 63, 114],
         "cmyk": [12, 75, 55, 1],
@@ -327,6 +356,7 @@
         "colorText": "black"
     }, {
         "id": "bc170b4d-1808-46f1-93d5-764daab21e2c",
+        "visible": true,
         "name": "Carmine Red",
         "rgb": [255, 87, 140],
         "cmyk": [0, 66, 45, 0],
@@ -339,6 +369,7 @@
         "colorText": "black"
     }, {
         "id": "95c3afe5-2722-4663-8109-5586f5b04d4a",
+        "visible": true,
         "name": "Scarlet Lake",
         "rgb": [255, 38, 112],
         "cmyk": [0, 85, 56, 0],
@@ -350,6 +381,7 @@
         "colorText": "black"
     }, {
         "id": "b917c9cf-c93c-421c-b802-954ed18fb44e",
+        "visible": true,
         "name": "Crimson Red",
         "rgb": [225, 2, 7],
         "cmyk": [10, 99, 97, 2],
@@ -362,6 +394,7 @@
         "colorText": "white"
     }, {
         "id": "1d16da8f-2e60-4dcd-9a35-00ae7d50a404",
+        "visible": true,
         "name": "Henna",
         "rgb": [185, 24, 97],
         "cmyk": [22, 90, 59, 7],
@@ -373,6 +406,7 @@
         "colorText": "white"
     }, {
         "id": "919872e2-966b-465c-a770-a02610f7a4b7",
+        "visible": true,
         "name": "Raspberry",
         "rgb": [174, 7, 101],
         "cmyk": [24, 97, 56, 10],
@@ -384,6 +418,7 @@
         "colorText": "white"
     }, {
         "id": "6421dc6f-4973-43c5-8056-6afd2889912f",
+        "visible": true,
         "name": "Blush Pink",
         "rgb": [255, 168, 212],
         "cmyk": [0, 34, 17, 0],
@@ -396,6 +431,7 @@
         "colorText": "black"
     }, {
         "id": "bd6f3dae-25ff-4d93-aa48-b900376fd218",
+        "visible": true,
         "name": "Flagstone Red",
         "rgb": [169, 111, 184],
         "cmyk": [33, 56, 27, 1],
@@ -407,6 +443,7 @@
         "colorText": "black"
     }, {
         "id": "79e0bc43-370c-4b8b-b337-a6c1d335a122",
+        "visible": true,
         "name": "Tuscan Red",
         "rgb": [148, 45, 123],
         "cmyk": [34, 80, 45, 12],
@@ -419,6 +456,7 @@
         "colorText": "white"
     }, {
         "id": "3de8e5c7-0df5-4497-84a9-1d3f16cda83f",
+        "visible": true,
         "name": "Process Red",
         "rgb": [252, 140, 255],
         "cmyk": [1, 45, 0, 0],
@@ -430,6 +468,7 @@
         "colorText": "black"
     }, {
         "id": "45c5aec4-7794-4692-a3f1-72e4b398626b",
+        "visible": true,
         "name": "Pink",
         "rgb": [255, 112, 255],
         "cmyk": [0, 56, 0, 0],
@@ -442,6 +481,7 @@
         "colorText": "black"
     }, {
         "id": "d2ecf399-487b-4900-be4d-18cc70fe66d3",
+        "visible": true,
         "name": "Magenta",
         "rgb": [255, 61, 245],
         "cmyk": [0, 76, 4, 0],
@@ -453,6 +493,7 @@
         "colorText": "black"
     }, {
         "id": "b1918b83-ea0e-4bfb-9b75-c74de8ab99fb",
+        "visible": true,
         "name": "Rhodamine",
         "rgb": [245, 3, 252],
         "cmyk": [4, 99, 1, 0],
@@ -464,6 +505,7 @@
         "colorText": "white"
     }, {
         "id": "9f7a24b3-f180-48b7-868a-2cf3d39bf807",
+        "visible": true,
         "name": "Mulberry",
         "rgb": [196, 13, 255],
         "cmyk": [23, 95, 0, 0],
@@ -476,6 +518,7 @@
         "colorText": "black"
     }, {
         "id": "fed0cd25-e310-4283-897e-71a178563274",
+        "visible": true,
         "name": "Deco Pink",
         "rgb": [255, 222, 255],
         "cmyk": [0, 13, 0, 0],
@@ -487,6 +530,7 @@
         "colorText": "black"
     }, {
         "id": "cb96fcd9-2dbb-4dab-b24d-8daa13993701",
+        "visible": true,
         "name": "Ballet Pink",
         "rgb": [245, 189, 222],
         "cmyk": [4, 26, 13, 0],
@@ -499,6 +543,7 @@
         "colorText": "black"
     }, {
         "id": "c5169c09-1ab8-4b18-9f48-3e755f339f9e",
+        "visible": true,
         "name": "Greyed Lavender",
         "rgb": [196, 184, 255],
         "cmyk": [23, 28, 0, 0],
@@ -510,6 +555,7 @@
         "colorText": "black"
     }, {
         "id": "5e4caa54-a5fe-4e54-9f5c-93e0091be241",
+        "visible": true,
         "name": "Lilac",
         "rgb": [166, 166, 255],
         "cmyk": [35, 35, 0, 0],
@@ -521,6 +567,7 @@
         "colorText": "black"
     }, {
         "id": "dd466bd3-8d52-415c-b671-4b8a6c0d22ba",
+        "visible": true,
         "name": "Clay Rose",
         "rgb": [209, 138, 255],
         "cmyk": [18, 46, 0, 0],
@@ -532,6 +579,7 @@
         "colorText": "black"
     }, {
         "id": "c9d81724-e1cb-4829-8090-bdefcd3c64a8",
+        "visible": true,
         "name": "Dark Purple",
         "rgb": [40, 0, 223],
         "cmyk": [84, 100, 10, 3],
@@ -543,6 +591,7 @@
         "colorText": "white"
     }, {
         "id": "a86df0e5-16c3-4646-8551-9a1e0de8ec65",
+        "visible": true,
         "name": "Violet Mist",
         "rgb": [184, 212, 255],
         "cmyk": [28, 17, 0, 0],
@@ -554,6 +603,7 @@
         "colorText": "black"
     }, {
         "id": "cfe4aae1-d2ac-46a6-8151-d41c96be62c9",
+        "visible": true,
         "name": "Parma Violet",
         "rgb": [112, 140, 255],
         "cmyk": [56, 45, 0, 0],
@@ -565,6 +615,7 @@
         "colorText": "black"
     }, {
         "id": "eaeb6396-4c6d-4e92-b5a0-0cc761cabdbe",
+        "visible": true,
         "name": "Violet",
         "rgb": [38, 15, 252],
         "cmyk": [85, 94, 1, 0],
@@ -577,6 +628,7 @@
         "colorText": "white"
     }, {
         "id": "3dbbcde9-5bdc-410e-9232-abb4efcff35d",
+        "visible": true,
         "name": "Deco Blue",
         "rgb": [184, 255, 245],
         "cmyk": [28, 0, 4, 0],
@@ -588,6 +640,7 @@
         "colorText": "black"
     }, {
         "id": "efb17676-b9f8-4f88-8ea7-60270c0c0e75",
+        "visible": true,
         "name": "Light Cerulean Blue",
         "rgb": [199, 242, 255],
         "cmyk": [22, 5, 0, 0],
@@ -599,6 +652,7 @@
         "colorText": "black"
     }, {
         "id": "b5ce036a-2497-4058-b22d-353300913001",
+        "visible": true,
         "name": "Sky Blue Light",
         "rgb": [130, 209, 255],
         "cmyk": [49, 18, 0, 0],
@@ -610,6 +664,7 @@
         "colorText": "black"
     }, {
         "id": "f0a57ba5-06a1-46c7-ad4b-94702bffac72",
+        "visible": true,
         "name": "True Blue",
         "rgb": [105, 212, 255],
         "cmyk": [59, 17, 0, 0],
@@ -621,6 +676,7 @@
         "colorText": "black"
     }, {
         "id": "d87d53aa-222e-4f78-b10b-f9bb4b6b95db",
+        "visible": true,
         "name": "Copenhagen Blue",
         "rgb": [77, 181, 255],
         "cmyk": [70, 29, 0, 0],
@@ -632,6 +688,7 @@
         "colorText": "black"
     }, {
         "id": "0abf51bc-9143-4e17-80d9-c4665ae86d71",
+        "visible": true,
         "name": "Imperial Violet",
         "rgb": [87, 122, 247],
         "cmyk": [66, 52, 3, 0],
@@ -643,6 +700,7 @@
         "colorText": "black"
     }, {
         "id": "8d355518-8f38-4822-8457-090168a1be17",
+        "visible": true,
         "name": "Ultramarine",
         "rgb": [51, 112, 250],
         "cmyk": [80, 56, 2, 0],
@@ -655,6 +713,7 @@
         "colorText": "black"
     }, {
         "id": "9a4ef558-ecf1-4e71-886d-c4562bdc46f9",
+        "visible": true,
         "name": "Violet Blue",
         "rgb": [38, 81, 237],
         "cmyk": [85, 68, 6, 1],
@@ -666,6 +725,7 @@
         "colorText": "black"
     }, {
         "id": "694dcf24-7bb9-4f92-b251-c28e2a60891f",
+        "visible": true,
         "name": "Indigo Blue",
         "rgb": [31, 62, 187],
         "cmyk": [87, 74, 22, 6],
@@ -677,6 +737,7 @@
         "colorText": "white"
     }, {
         "id": "0aca196e-1d73-4052-88e1-ea79762ede8a",
+        "visible": true,
         "name": "Navy Blue",
         "rgb": [6, 29, 143],
         "cmyk": [97, 86, 31, 19],
@@ -688,6 +749,7 @@
         "colorText": "white"
     }, {
         "id": "b719ff99-b19b-4a91-b112-a068138c3e6d",
+        "visible": true,
         "name": "Cloud Blue",
         "rgb": [214, 235, 252],
         "cmyk": [16, 8, 1, 0],
@@ -699,6 +761,7 @@
         "colorText": "black"
     }, {
         "id": "cd816c68-cbdf-45e1-9089-d48784a9d8fa",
+        "visible": true,
         "name": "Cold Stone",
         "rgb": [204, 227, 250],
         "cmyk": [20, 11, 2, 0],
@@ -710,6 +773,7 @@
         "colorText": "black"
     }, {
         "id": "bafaa7e5-80c5-40e0-9ef7-3cb42524dfa7",
+        "visible": true,
         "name": "Blue Slate",
         "rgb": [143, 184, 252],
         "cmyk": [44, 28, 1, 0],
@@ -721,6 +785,7 @@
         "colorText": "black"
     }, {
         "id": "eeb5fd97-8297-45c4-8827-81c3156c3540",
+        "visible": true,
         "name": "Periwinkle",
         "rgb": [107, 161, 237],
         "cmyk": [58, 37, 7, 0],
@@ -732,6 +797,7 @@
         "colorText": "black"
     }, {
         "id": "cb6f86c4-3d36-4871-a378-ea483613489c",
+        "visible": true,
         "name": "Mediterranean Blue",
         "rgb": [128, 191, 250],
         "cmyk": [50, 25, 2, 0],
@@ -743,6 +809,7 @@
         "colorText": "black"
     }, {
         "id": "44e5aab8-14f3-4556-bb3b-cf9efeb7b836",
+        "visible": true,
         "name": "Cerulean Blue",
         "rgb": [128, 186, 255],
         "cmyk": [50, 27, 0, 0],
@@ -754,6 +821,7 @@
         "colorText": "black"
     }, {
         "id": "caabdbeb-fc5a-4b2d-81d9-5252d27c93e1",
+        "visible": true,
         "name": "Peacock Blue",
         "rgb": [44, 118, 186],
         "cmyk": [82, 52, 24, 4],
@@ -765,6 +833,7 @@
         "colorText": "white"
     }, {
         "id": "d723d4ce-5bf4-4561-94e4-dab161f481c5",
+        "visible": true,
         "name": "Pale Jade",
         "rgb": [189, 222, 196],
         "cmyk": [26, 13, 23, 0],
@@ -776,6 +845,7 @@
         "colorText": "black"
     }, {
         "id": "9a8b1dac-305c-4555-a0b1-85c0133943e8",
+        "visible": true,
         "name": "Celadon Green",
         "rgb": [178, 222, 194],
         "cmyk": [30, 13, 24, 0],
@@ -787,6 +857,7 @@
         "colorText": "black"
     }, {
         "id": "cdec1e87-07a7-4727-841e-b2830af5a524",
+        "visible": true,
         "name": "Spruce Green",
         "rgb": [48, 148, 113],
         "cmyk": [79, 35, 50, 11],
@@ -798,6 +869,7 @@
         "colorText": "white"
     }, {
         "id": "1b9a46ae-e63f-4e0b-8844-c46aa95ff43b",
+        "visible": true,
         "name": "Brittany Blue",
         "rgb": [133, 186, 196],
         "cmyk": [48, 27, 23, 0],
@@ -809,6 +881,7 @@
         "colorText": "black"
     }, {
         "id": "4a6a42f7-8c13-4542-a21b-31fdbea84117",
+        "visible": true,
         "name": "Teal Blue",
         "rgb": [82, 162, 167],
         "cmyk": [67, 35, 33, 2],
@@ -820,6 +893,7 @@
         "colorText": "white"
     }, {
         "id": "1c19927a-82bc-46e5-8f73-2e76ffbb15aa",
+        "visible": true,
         "name": "Muted Turquoise",
         "rgb": [176, 230, 242],
         "cmyk": [31, 10, 5, 0],
@@ -832,6 +906,7 @@
         "colorText": "black"
     }, {
         "id": "7346bb9f-b33a-4543-86bb-06dfc584d85d",
+        "visible": true,
         "name": "Light Blue",
         "rgb": [153, 232, 235],
         "cmyk": [40, 9, 8, 0],
@@ -843,6 +918,7 @@
         "colorText": "black"
     }, {
         "id": "c1e39164-fb7b-4d94-ab01-e969df7995d4",
+        "visible": true,
         "name": "Light Aqua",
         "rgb": [150, 232, 222],
         "cmyk": [41, 9, 13, 0],
@@ -854,6 +930,7 @@
         "colorText": "black"
     }, {
         "id": "196286b3-ba2e-4b4f-815a-c09c108b44b5",
+        "visible": true,
         "name": "Aquamarine",
         "rgb": [66, 199, 181],
         "cmyk": [74, 22, 29, 0],
@@ -865,6 +942,7 @@
         "colorText": "white"
     }, {
         "id": "e1a4004f-df2a-47c9-a0f6-1c0b902dd5fb",
+        "visible": true,
         "name": "True Green",
         "rgb": [189, 250, 176],
         "cmyk": [26, 2, 31, 0],
@@ -876,6 +954,7 @@
         "colorText": "black"
     }, {
         "id": "93ea1161-edb7-48aa-b436-276590c1a0f9",
+        "visible": true,
         "name": "Grass Green",
         "rgb": [83, 225, 96],
         "cmyk": [67, 11, 62, 1],
@@ -887,6 +966,7 @@
         "colorText": "black"
     }, {
         "id": "e2ada8cc-35cb-4f69-8677-ec4e2def3ee2",
+        "visible": true,
         "name": "Mint Cream",
         "rgb": [181, 245, 135],
         "cmyk": [29, 4, 47, 0],
@@ -898,6 +978,7 @@
         "colorText": "black"
     }, {
         "id": "2fd7dbd2-95e8-489c-a1f9-63ce57c63c5b",
+        "visible": true,
         "name": "Apple Green",
         "rgb": [161, 245, 122],
         "cmyk": [37, 4, 52, 0],
@@ -909,6 +990,7 @@
         "colorText": "black"
     }, {
         "id": "99019eac-4144-4b95-8b8b-14d9fbcbef8e",
+        "visible": true,
         "name": "Leaf Green",
         "rgb": [101, 215, 35],
         "cmyk": [60, 15, 86, 1],
@@ -920,6 +1002,7 @@
         "colorText": "white"
     }, {
         "id": "951fdb0c-8b33-4b70-b10d-343b0de40f6b",
+        "visible": true,
         "name": "Lime Green",
         "rgb": [186, 240, 176],
         "cmyk": [27, 6, 31, 0],
@@ -931,6 +1014,7 @@
         "colorText": "black"
     }, {
         "id": "985f8646-1e54-410a-aa3e-bdf4ebd8c0c7",
+        "visible": true,
         "name": "Forest Green",
         "rgb": [133, 212, 143],
         "cmyk": [48, 17, 44, 0],
@@ -942,6 +1026,7 @@
         "colorText": "black"
     }, {
         "id": "46309d5c-96bd-48f0-865f-9796d21f9af4",
+        "visible": true,
         "name": "Emerald",
         "rgb": [47, 205, 45],
         "cmyk": [81, 17, 82, 3],
@@ -953,6 +1038,7 @@
         "colorText": "white"
     }, {
         "id": "ce93b129-f825-4c11-bfb9-578b242dfdab",
+        "visible": true,
         "name": "Dark Green",
         "rgb": [64, 180, 55],
         "cmyk": [73, 24, 77, 7],
@@ -965,6 +1051,7 @@
         "colorText": "white"
     }, {
         "id": "28e2ac25-4410-4915-a39e-c504a00adf4b",
+        "visible": true,
         "name": "Spearmint",
         "rgb": [37, 160, 2],
         "cmyk": [83, 27, 99, 14],
@@ -977,6 +1064,7 @@
         "colorText": "white"
     }, {
         "id": "eddceaa2-b755-4b64-a11d-9f7f362ac9da",
+        "visible": true,
         "name": "Chartreuse",
         "rgb": [214, 255, 120],
         "cmyk": [16, 0, 53, 0],
@@ -988,6 +1076,7 @@
         "colorText": "black"
     }, {
         "id": "996199c3-6503-4586-b9f9-9bcdcf238393",
+        "visible": true,
         "name": "Lime peel",
         "rgb": [212, 250, 94],
         "cmyk": [17, 2, 63, 0],
@@ -999,6 +1088,7 @@
         "colorText": "black"
     }, {
         "id": "13006ddc-17ca-4285-9e63-61cb83cdc349",
+        "visible": true,
         "name": "Avocado",
         "rgb": [181, 255, 5],
         "cmyk": [29, 0, 98, 0],
@@ -1010,6 +1100,7 @@
         "colorText": "white"
     }, {
         "id": "07353bab-228d-4040-9412-4b3dc939ed83",
+        "visible": true,
         "name": "Spring Green",
         "rgb": [150, 247, 54],
         "cmyk": [41, 3, 79, 0],
@@ -1021,6 +1112,7 @@
         "colorText": "black"
     }, {
         "id": "f5aa4bc1-8d08-4316-bbb9-82e52353d2b4",
+        "visible": true,
         "name": "Green Tea",
         "rgb": [112, 200, 0],
         "cmyk": [55, 20, 100, 2],
@@ -1032,6 +1124,7 @@
         "colorText": "white"
     }, {
         "id": "73c75955-a42d-4c4f-9fd9-0a4abdf034be",
+        "visible": true,
         "name": "Light Olive Green",
         "rgb": [154, 197, 93],
         "cmyk": [39, 22, 63, 1],
@@ -1043,6 +1136,7 @@
         "colorText": "black"
     }, {
         "id": "3520e0f0-8f11-47f5-b280-fd7b1cffd8b6",
+        "visible": true,
         "name": "Dark Olive Green",
         "rgb": [76, 159, 22],
         "cmyk": [66, 29, 90, 12],
@@ -1054,6 +1148,7 @@
         "colorText": "white"
     }, {
         "id": "c35e493e-75bd-41b6-b95a-a200d0a990e6",
+        "visible": true,
         "name": "Jade Green",
         "rgb": [166, 224, 204],
         "cmyk": [35, 12, 20, 0],
@@ -1065,6 +1160,7 @@
         "colorText": "black"
     }, {
         "id": "e731a375-4eb8-49a1-88b7-1b75d1543266",
+        "visible": true,
         "name": "Pewter",
         "rgb": [209, 224, 227],
         "cmyk": [18, 12, 11, 0],
@@ -1076,6 +1172,7 @@
         "colorText": "black"
     }, {
         "id": "b365f217-c49d-49de-9575-d2c845ee750f",
+        "visible": true,
         "name": "Parrot Green",
         "rgb": [63, 215, 129],
         "cmyk": [75, 15, 49, 1],
@@ -1088,6 +1185,7 @@
         "colorText": "black"
     }, {
         "id": "533d0fb6-5f4a-4035-a368-b33e5e2efed8",
+        "visible": true,
         "name": "Ash Grey",
         "rgb": [214, 222, 209],
         "cmyk": [16, 13, 18, 0],
@@ -1099,6 +1197,7 @@
         "colorText": "black"
     }, {
         "id": "c56228a6-2a24-48e6-8edf-ce514d055d27",
+        "visible": true,
         "name": "Driftwood",
         "rgb": [219, 222, 214],
         "cmyk": [14, 13, 16, 0],
@@ -1110,6 +1209,7 @@
         "colorText": "black"
     }, {
         "id": "44fec3c4-4457-445e-91a7-361b2f5980d1",
+        "visible": true,
         "name": "Wheat",
         "rgb": [242, 245, 204],
         "cmyk": [5, 4, 20, 0],
@@ -1121,6 +1221,7 @@
         "colorText": "black"
     }, {
         "id": "66e00b08-28fe-4c09-b2b2-e120d718e9e9",
+        "visible": true,
         "name": "Pale Peach",
         "rgb": [245, 240, 196],
         "cmyk": [4, 6, 23, 0],
@@ -1132,6 +1233,7 @@
         "colorText": "black"
     }, {
         "id": "ca63321c-ff52-47e9-a9f1-d4950cad65e2",
+        "visible": true,
         "name": "Eggshell",
         "rgb": [250, 245, 214],
         "cmyk": [2, 4, 16, 0],
@@ -1144,6 +1246,7 @@
         "colorText": "black"
     }, {
         "id": "fdbafda7-bdaa-4a36-a703-d35ded5ee66f",
+        "visible": true,
         "name": "Blondwood",
         "rgb": [250, 245, 194],
         "cmyk": [2, 4, 24, 0],
@@ -1156,6 +1259,7 @@
         "colorText": "black"
     }, {
         "id": "2eb43272-622d-476c-aacf-b87eee85ebc7",
+        "visible": true,
         "name": "Buff",
         "rgb": [235, 240, 235],
         "cmyk": [8, 6, 8, 0],
@@ -1167,6 +1271,7 @@
         "colorText": "black"
     }, {
         "id": "ab211474-c096-40a7-84a3-95441bf4e45a",
+        "visible": true,
         "name": "Cinnamon Toast",
         "rgb": [224, 207, 158],
         "cmyk": [12, 19, 38, 0],
@@ -1179,6 +1284,7 @@
         "colorText": "black"
     }, {
         "id": "2cc87f9e-eb72-4bf0-a481-a51e25e6c82a",
+        "visible": true,
         "name": "Cocoa Bean",
         "rgb": [55, 67, 12],
         "cmyk": [60, 51, 91, 46],
@@ -1191,6 +1297,7 @@
         "colorText": "white"
     }, {
         "id": "0d6f2827-198f-4118-b9cb-e6140ea4c30b",
+        "visible": true,
         "name": "Mocha Light",
         "rgb": [149, 142, 81],
         "cmyk": [37, 40, 66, 7],
@@ -1203,6 +1310,7 @@
         "colorText": "white"
     }, {
         "id": "7e67876c-c0ea-46bb-9213-2ead9bf74ba5",
+        "visible": true,
         "name": "Taupe",
         "rgb": [147, 165, 140],
         "cmyk": [41, 34, 44, 2],
@@ -1214,6 +1322,7 @@
         "colorText": "black"
     }, {
         "id": "0ff1ad1a-12b8-4cef-a95b-17b5759c5500",
+        "visible": true,
         "name": "Mocha Dark",
         "rgb": [62, 62, 10],
         "cmyk": [55, 55, 93, 46],
@@ -1226,6 +1335,7 @@
         "colorText": "white"
     }, {
         "id": "f80e4e97-b1a1-4739-ad24-64846788eaac",
+        "visible": true,
         "name": "Brick White",
         "rgb": [245, 242, 227],
         "cmyk": [4, 5, 11, 0],
@@ -1237,6 +1347,7 @@
         "colorText": "black"
     }, {
         "id": "87d53c4b-df51-4a07-92b3-8d10d820186f",
+        "visible": true,
         "name": "Oatmeal",
         "rgb": [212, 219, 140],
         "cmyk": [17, 14, 45, 0],
@@ -1248,6 +1359,7 @@
         "colorText": "black"
     }, {
         "id": "0ce195c7-e399-48e2-b2d0-4568e9b6c45c",
+        "visible": true,
         "name": "Parchment",
         "rgb": [209, 219, 191],
         "cmyk": [18, 14, 25, 0],
@@ -1259,6 +1371,7 @@
         "colorText": "black"
     }, {
         "id": "d9e2a88b-341e-4d67-9d3a-31f450f033d0",
+        "visible": true,
         "name": "Putty",
         "rgb": [230, 222, 214],
         "cmyk": [10, 13, 16, 0],
@@ -1270,6 +1383,7 @@
         "colorText": "black"
     }, {
         "id": "2a788032-f327-4500-9173-02229c6a459c",
+        "visible": true,
         "name": "Light Walnut",
         "rgb": [217, 204, 181],
         "cmyk": [15, 20, 29, 0],
@@ -1282,6 +1396,7 @@
         "colorText": "black"
     }, {
         "id": "858acbbb-3ccf-4ce5-8f2d-e79bd89b855e",
+        "visible": true,
         "name": "Eggplant",
         "rgb": [40, 13, 26],
         "cmyk": [48, 83, 66, 70],
@@ -1293,6 +1408,7 @@
         "colorText": "white"
     }, {
         "id": "947b9faa-a533-4f9c-9850-ebcf39d1e557",
+        "visible": true,
         "name": "Light Tan",
         "rgb": [187, 172, 126],
         "cmyk": [26, 32, 50, 1],
@@ -1304,6 +1420,7 @@
         "colorText": "black"
     }, {
         "id": "ce4729f2-5c5f-4b80-a5ad-5d51b3236bc6",
+        "visible": true,
         "name": "Jet Black",
         "rgb": [19, 24, 23],
         "cmyk": [73, 65, 66, 73],
@@ -1315,6 +1432,7 @@
         "colorText": "white"
     }, {
         "id": "df018523-fb02-40da-a077-67cdb864f1b2",
+        "visible": true,
         "name": "Sepia",
         "rgb": [117, 113, 48],
         "cmyk": [44, 46, 77, 18],
@@ -1326,6 +1444,7 @@
         "colorText": "white"
     }, {
         "id": "46eed9e6-163f-4dfb-af52-48edd2d02f66",
+        "visible": true,
         "name": "Light Umber",
         "rgb": [105, 116, 58],
         "cmyk": [49, 44, 72, 19],
@@ -1338,6 +1457,7 @@
         "colorText": "white"
     }, {
         "id": "14f13c60-038b-402c-830c-882d202b0699",
+        "visible": true,
         "name": "Dark Brown",
         "rgb": [111, 117, 59],
         "cmyk": [47, 44, 72, 18],
@@ -1349,6 +1469,7 @@
         "colorText": "white"
     }, {
         "id": "111271ac-55fa-44bf-9f03-9f0bdd7c86cc",
+        "visible": true,
         "name": "Khaki",
         "rgb": [191, 194, 135],
         "cmyk": [25, 24, 47, 0],
@@ -1361,6 +1482,7 @@
         "colorText": "black"
     }, {
         "id": "d42dd557-d38b-494e-978b-6790def60724",
+        "visible": true,
         "name": "Warm Grey 10%",
         "rgb": [252, 252, 252],
         "cmyk": [1, 1, 1, 0],
@@ -1373,6 +1495,7 @@
         "colorText": "black"
     }, {
         "id": "d58e8378-58c8-4300-a0f3-d2f6c4cea108",
+        "visible": true,
         "name": "Warm Grey 20%",
         "rgb": [237, 240, 240],
         "cmyk": [7, 6, 6, 0],
@@ -1385,6 +1508,7 @@
         "colorText": "black"
     }, {
         "id": "c60b4b0c-0a15-4aab-ade7-55e401462f80",
+        "visible": true,
         "name": "Warm Grey 30%",
         "rgb": [232, 232, 237],
         "cmyk": [9, 9, 7, 0],
@@ -1397,6 +1521,7 @@
         "colorText": "black"
     }, {
         "id": "cd50e921-2d82-484f-bfc5-956c9e546835",
+        "visible": true,
         "name": "Warm Grey 40%",
         "rgb": [222, 224, 227],
         "cmyk": [13, 12, 11, 0],
@@ -1409,6 +1534,7 @@
         "colorText": "black"
     }, {
         "id": "f7c848f2-58a4-497a-8ab4-2527c18d101b",
+        "visible": true,
         "name": "Warm Grey 50%",
         "rgb": [178, 186, 191],
         "cmyk": [30, 27, 25, 0],
@@ -1421,6 +1547,7 @@
         "colorText": "black"
     }, {
         "id": "23082d66-bcbf-4ed4-8eb0-4bcaad541e43",
+        "visible": true,
         "name": "Warm Grey 60%",
         "rgb": [166, 173, 181],
         "cmyk": [35, 32, 29, 0],
@@ -1433,6 +1560,7 @@
         "colorText": "black"
     }, {
         "id": "c7f74b91-4812-438f-88a9-ee124be09ec4",
+        "visible": true,
         "name": "Warm Grey 70%",
         "rgb": [117, 127, 134],
         "cmyk": [50, 46, 43, 8],
@@ -1445,6 +1573,7 @@
         "colorText": "white"
     }, {
         "id": "d88bd75c-86dc-44f0-addb-800fcd6e1ef1",
+        "visible": true,
         "name": "Warm Grey 80%",
         "rgb": [74, 78, 87],
         "cmyk": [60, 58, 53, 27],
@@ -1457,6 +1586,7 @@
         "colorText": "white"
     }, {
         "id": "45478514-e3fb-4065-821d-bf9e5b3ffe7e",
+        "visible": true,
         "name": "Warm Grey 90%",
         "rgb": [35, 36, 43],
         "cmyk": [67, 66, 60, 58],
@@ -1469,6 +1599,7 @@
         "colorText": "white"
     }, {
         "id": "bd0f30ba-1b80-4683-8a2e-5e768f14fe79",
+        "visible": true,
         "name": "Warm Black",
         "rgb": [6, 8, 8],
         "cmyk": [75, 68, 67, 90],
@@ -1480,6 +1611,7 @@
         "colorText": "white"
     }, {
         "id": "64a0adc4-1059-4ea6-b0dc-e65cb1651262",
+        "visible": true,
         "name": "Cool Grey 10%",
         "rgb": [240, 244, 246],
         "cmyk": [1, 0, 0, 3],
@@ -1492,6 +1624,7 @@
         "colorText": "black"
     }, {
         "id": "fb864fb2-cf8b-4a9d-b4f6-c0d8f72fd70d",
+        "visible": true,
         "name": "Cool Grey 20%",
         "rgb": [229, 236, 239],
         "cmyk": [3, 0, 0, 6],
@@ -1504,6 +1637,7 @@
         "colorText": "black"
     }, {
         "id": "c8b2bf6c-0a73-48e4-97c6-81395f3b107f",
+        "visible": true,
         "name": "Cool Grey 30%",
         "rgb": [207, 220, 227],
         "cmyk": [7, 0, 0, 12],
@@ -1516,6 +1650,7 @@
         "colorText": "black"
     }, {
         "id": "0d82d8a9-06a5-48f7-8385-2f4357886bfa",
+        "visible": true,
         "name": "Cool Grey 40%",
         "rgb": [187, 198, 205],
         "cmyk": [7, 0, 0, 23],
@@ -1528,6 +1663,7 @@
         "colorText": "black"
     }, {
         "id": "8edeb34e-0ff9-4fae-9c7e-dc7eb1732081",
+        "visible": true,
         "name": "Cool Grey 50%",
         "rgb": [165, 176, 183],
         "cmyk": [7, 0, 0, 34],
@@ -1540,6 +1676,7 @@
         "colorText": "black"
     }, {
         "id": "04439997-43a2-4096-b37a-6b33dc0417c5",
+        "visible": true,
         "name": "Cool Grey 60%",
         "rgb": [139, 160, 172],
         "cmyk": [17, 0, 0, 39],
@@ -1552,6 +1689,7 @@
         "colorText": "black"
     }, {
         "id": "cb89093f-b7c0-4c13-9193-e608ea3a36f3",
+        "visible": true,
         "name": "Cool Grey 70%",
         "rgb": [104, 128, 141],
         "cmyk": [23, 0, 0, 55],
@@ -1564,6 +1702,7 @@
         "colorText": "white"
     }, {
         "id": "1385eaee-ee8d-4f4a-a101-f667bf6506b9",
+        "visible": true,
         "name": "Cool Grey 80%",
         "rgb": [81, 101, 112],
         "cmyk": [23, 0, 0, 70],
@@ -1576,6 +1715,7 @@
         "colorText": "white"
     }, {
         "id": "1519f5a2-dac5-43e1-bfe9-e3cda3bd68e4",
+        "visible": true,
         "name": "Cool Grey 90%",
         "rgb": [54, 70, 78],
         "cmyk": [23, 0, 0, 85],
@@ -1588,6 +1728,7 @@
         "colorText": "white"
     }, {
         "id": "ad01146d-389e-47cf-8acf-49b961c1fc0e",
+        "visible": true,
         "name": "Black",
         "rgb": [6, 8, 8],
         "cmyk": [75, 68, 67, 90],
@@ -1609,6 +1750,7 @@
         "colorText": "white"
     }, {
         "id": "b1d79368-e1a6-4281-bd7a-c4ae9b796d4d",
+        "visible": true,
         "name": "French Grey 10%",
         "rgb": [245, 242, 240],
         "cmyk": [4, 5, 6, 0],
@@ -1621,6 +1763,7 @@
         "colorText": "black"
     }, {
         "id": "493fd632-239b-4266-b409-6b31a58a7a3b",
+        "visible": true,
         "name": "French Grey 20%",
         "rgb": [232, 232, 230],
         "cmyk": [9, 9, 10, 0],
@@ -1633,6 +1776,7 @@
         "colorText": "black"
     }, {
         "id": "e3cd6dc1-27f4-4068-88e3-9a6ca2e6ff4e",
+        "visible": true,
         "name": "French Grey 30%",
         "rgb": [204, 207, 199],
         "cmyk": [20, 19, 22, 0],
@@ -1645,6 +1789,7 @@
         "colorText": "black"
     }, {
         "id": "f5151041-574c-4225-b2c6-c7910579966e",
+        "visible": true,
         "name": "French Grey 40%",
         "rgb": [181, 186, 184],
         "cmyk": [29, 27, 28, 0],
@@ -1657,6 +1802,7 @@
         "colorText": "black"
     }, {
         "id": "5a339646-5657-4e93-9b6e-2fcd5736bf00",
+        "visible": true,
         "name": "French Grey 50%",
         "rgb": [164, 164, 164],
         "cmyk": [35, 35, 35, 1],
@@ -1669,6 +1815,7 @@
         "colorText": "black"
     }, {
         "id": "49892cf7-33e9-41a4-bfc1-fde2711b7215",
+        "visible": true,
         "name": "French Grey 60%",
         "rgb": [147, 152, 152],
         "cmyk": [41, 39, 39, 2],
@@ -1681,6 +1828,7 @@
         "colorText": "black"
     }, {
         "id": "8e7058eb-5f2e-476b-8385-675637881ccb",
+        "visible": true,
         "name": "French Grey 70%",
         "rgb": [117, 124, 124],
         "cmyk": [49, 46, 46, 10],
@@ -1693,6 +1841,7 @@
         "colorText": "white"
     }, {
         "id": "e0dddb5d-8fd2-4b1f-a59b-10e0802d8bb7",
+        "visible": true,
         "name": "French Grey 80%",
         "rgb": [76, 82, 84],
         "cmyk": [59, 56, 55, 27],
@@ -1705,6 +1854,7 @@
         "colorText": "white"
     }, {
         "id": "2073bae9-35ed-4606-89c7-2b494ad09d71",
+        "visible": true,
         "name": "French Grey 90%",
         "rgb": [39, 42, 44],
         "cmyk": [66, 63, 62, 55],
@@ -1717,6 +1867,7 @@
         "colorText": "white"
     }, {
         "id": "6ac45665-0289-44b0-b313-619e0e92f126",
+        "visible": true,
         "name": "Colorless Blender",
         "rgb": [255, 255, 255],
         "cmyk": [0, 0, 0, 0],
@@ -1728,6 +1879,7 @@
         "colorText": "black"
     }, {
         "id": "6b4f15aa-be6d-4db6-9e37-26568e9a616b",
+        "visible": true,
         "name": "Metallic Silver Broad",
         "rgb": [149, 169, 167],
         "cmyk": [41, 33, 34, 1],
@@ -1739,6 +1891,7 @@
         "colorText": "black"
     }, {
         "id": "080ff3a2-a560-4fa2-b6d2-b864cfce6c58",
+        "visible": true,
         "name": "Metallic Silver Fine",
         "rgb": [149, 169, 167],
         "cmyk": [41, 33, 34, 1],
@@ -1750,6 +1903,7 @@
         "colorText": "black"
     }, {
         "id": "dd250f71-9b10-42b4-b965-ba813f610a6a",
+        "visible": true,
         "name": "Metallic Gold Broad",
         "rgb": [162, 177, 87],
         "cmyk": [35, 29, 65, 2],
@@ -1761,6 +1915,7 @@
         "colorText": "white"
     }, {
         "id": "26bf2ef0-1b60-4320-a092-00c16f1d068d",
+        "visible": true,
         "name": "Metallic Gold Fine",
         "rgb": [162, 177, 87],
         "cmyk": [35, 29, 65, 2],
@@ -1772,6 +1927,7 @@
         "colorText": "white"
     }, {
         "id": "c65bde21-5913-4396-9c68-d413a6d37ed9",
+        "visible": true,
         "name": "Bronze",
         "rgb": [154, 169, 0],
         "cmyk": [37, 31, 100, 4],
@@ -1783,6 +1939,7 @@
         "colorText": "white"
     }, {
         "id": "3214f80a-17cc-4078-925b-94120919b883",
+        "visible": true,
         "name": "Neutral Grey 10%",
         "rgb": [221, 220, 221],
         "cmyk": [9, 5, 6, 0],
@@ -1795,6 +1952,7 @@
         "colorText": "black"
     }, {
         "id": "cb20ab99-ac00-4afd-a3fe-9c60b27678ad",
+        "visible": true,
         "name": "Neutral Grey 20%",
         "rgb": [196, 195, 198],
         "cmyk": [17, 11, 11, 0],
@@ -1807,6 +1965,7 @@
         "colorText": "black"
     }, {
         "id": "4c2d0c5b-07c7-4d17-986a-6e6eeae6b875",
+        "visible": true,
         "name": "Neutral Grey 30%",
         "rgb": [174, 172, 176],
         "cmyk": [26, 18, 17, 0],
@@ -1819,6 +1978,7 @@
         "colorText": "black"
     }, {
         "id": "dd1643ca-3dcd-4af0-aceb-2b4abd230b20",
+        "visible": true,
         "name": "Neutral Grey 40%",
         "rgb": [153, 151, 157],
         "cmyk": [49, 38, 34, 7],
@@ -1831,6 +1991,7 @@
         "colorText": "black"
     }, {
         "id": "c0246743-11c6-4238-ae1c-f089b766fd5d",
+        "visible": true,
         "name": "Neutral Grey 50%",
         "rgb": [134, 132, 139],
         "cmyk": [64, 51, 44, 24],
@@ -1843,6 +2004,7 @@
         "colorText": "black"
     }, {
         "id": "33ad6f4b-5145-4cda-b0d1-958e1eaff239",
+        "visible": true,
         "name": "Neutral Grey 60%",
         "rgb": [116, 115, 122],
         "cmyk": [51, 38, 35, 9],
@@ -1855,6 +2017,7 @@
         "colorText": "black"
     }, {
         "id": "aec1c5ae-f3f1-4e8f-a952-ae7db5df7a60",
+        "visible": true,
         "name": "Neutral Grey 70%",
         "rgb": [100, 99, 107],
         "cmyk": [72, 58, 50, 33],
@@ -1867,6 +2030,7 @@
         "colorText": "white"
     }, {
         "id": "29801ea3-3e59-4f25-8105-5e23d66e7c2c",
+        "visible": true,
         "name": "Neutral Grey 80%",
         "rgb": [85, 86, 93],
         "cmyk": [65, 51, 46, 25],
@@ -1879,6 +2043,7 @@
         "colorText": "white"
     }, {
         "id": "47f76331-9257-47e6-8be8-8f3295872a69",
+        "visible": true,
         "name": "Neutral Grey 90%",
         "rgb": [70, 73, 81],
         "cmyk": [54, 20, 1, 0],
@@ -1891,6 +2056,7 @@
         "colorText": "white"
     }, {
         "id": "726cb7c7-d835-478e-a5d5-b51e6f02c335",
+        "visible": true,
         "name": "Almond Milk",
         "rgb": [251, 241, 234],
         "cmyk": [0, 6, 8, 0],
@@ -1903,6 +2069,7 @@
         "colorText": "black"
     }, {
         "id": "0c1155b2-7d29-4f3b-a57b-aa1e1dcdb295",
+        "visible": true,
         "name": "Ballet Pink Light",
         "rgb": [245, 223, 225],
         "cmyk": [0, 15, 6, 0],
@@ -1915,6 +2082,7 @@
         "colorText": "black"
     }, {
         "id": "8e4671fe-c983-46e2-92a2-756913f9de46",
+        "visible": true,
         "name": "Blush Pink Light",
         "rgb": [238, 203, 205],
         "cmyk": [0, 25, 11, 0],
@@ -1927,6 +2095,7 @@
         "colorText": "black"
     }, {
         "id": "122c3614-3ee4-4a9f-bb17-0be092fa647f",
+        "visible": true,
         "name": "Canary Yellow Light",
         "rgb": [255, 246, 153],
         "cmyk": [1, 0, 53, 0],
@@ -1938,6 +2107,7 @@
         "colorText": "black"
     }, {
         "id": "6282dc82-1173-47ac-97eb-f851abdc922c",
+        "visible": true,
         "name": "Carmine Red Light",
         "rgb": [225, 157, 148],
         "cmyk": [0, 47, 32, 0],
@@ -1949,6 +2119,7 @@
         "colorText": "black"
     }, {
         "id": "628e0846-bf6e-43ff-8964-984b04454901",
+        "visible": true,
         "name": "Deco Orange Light",
         "rgb": [240, 203, 167],
         "cmyk": [0, 24, 35, 0],
@@ -1960,6 +2131,7 @@
         "colorText": "black"
     }, {
         "id": "14b7a8e7-545c-4e7b-b71c-ea9d4adb538d",
+        "visible": true,
         "name": "Deco Pink Light",
         "rgb": [247, 230, 239],
         "cmyk": [0, 12, 1, 0],
@@ -1971,6 +2143,7 @@
         "colorText": "black"
     }, {
         "id": "9861a6e2-a634-44cc-b1fb-f44cf6ddc711",
+        "visible": true,
         "name": "Dusty Rose",
         "rgb": [241, 216, 213],
         "cmyk": [1, 18, 11, 0],
@@ -1982,6 +2155,7 @@
         "colorText": "black"
     }, {
         "id": "d55693e4-a7a8-46eb-992d-2d7edc95b120",
+        "visible": true,
         "name": "Greyed Lavender Light",
         "rgb": [226, 218, 236],
         "cmyk": [10, 14, 0, 0],
@@ -1993,6 +2167,7 @@
         "colorText": "black"
     }, {
         "id": "d6c3e4e8-c61c-4b65-a776-cf9bac4eab2b",
+        "visible": true,
         "name": "Light Umber 20%",
         "rgb": [228, 213, 192],
         "cmyk": [9, 16, 24, 0],
@@ -2004,6 +2179,7 @@
         "colorText": "black"
     }, {
         "id": "f90ef0a6-bb19-4338-81ef-fc3bbfe96a64",
+        "visible": true,
         "name": "Light Umber 30%",
         "rgb": [222, 203, 178],
         "cmyk": [11, 20, 29, 0],
@@ -2016,6 +2192,7 @@
         "colorText": "black"
     }, {
         "id": "4a543880-e9fe-471f-883a-fbeb16ac9c00",
+        "visible": true,
         "name": "Light Umber 40%",
         "rgb": [209, 191, 172],
         "cmyk": [16, 24, 30, 0],
@@ -2027,6 +2204,7 @@
         "colorText": "black"
     }, {
         "id": "8bf0176d-d543-4910-b9da-6af82875de79",
+        "visible": true,
         "name": "Light Umber 50%",
         "rgb": [203, 182, 161],
         "cmyk": [18, 28, 35, 0],
@@ -2038,6 +2216,7 @@
         "colorText": "black"
     }, {
         "id": "ffaafe3f-aae6-481d-a021-b119e9cc3689",
+        "visible": true,
         "name": "Light Umber 60%",
         "rgb": [196, 173, 150],
         "cmyk": [21, 32, 40, 0],
@@ -2050,6 +2229,7 @@
         "colorText": "black"
     }, {
         "id": "1ab49c1b-9263-4e39-a89b-e3a1008bdff2",
+        "visible": true,
         "name": "Light Umber 70%",
         "rgb": [189, 163, 138],
         "cmyk": [24, 36, 46, 0],
@@ -2061,6 +2241,7 @@
         "colorText": "black"
     }, {
         "id": "bd21b057-d924-4bfa-b210-dfbac8115719",
+        "visible": true,
         "name": "Light Umber 80%",
         "rgb": [182, 155, 128],
         "cmyk": [28, 40, 51, 0],
@@ -2072,6 +2253,7 @@
         "colorText": "black"
     }, {
         "id": "e5f04468-dba5-466b-90d5-57ef42c530cd",
+        "visible": true,
         "name": "Light Umber 90%",
         "rgb": [138, 116, 85],
         "cmyk": [43, 51, 72, 11],
@@ -2083,6 +2265,7 @@
         "colorText": "white"
     }, {
         "id": "a6574be7-1bbc-4713-9924-d62fa7025b2b",
+        "visible": true,
         "name": "Lilac Light",
         "rgb": [157, 150, 197],
         "cmyk": [41, 40, 1, 0],
@@ -2094,6 +2277,7 @@
         "colorText": "black"
     }, {
         "id": "684043a4-013f-451c-8f24-561853281fa4",
+        "visible": true,
         "name": "Mulberry Light",
         "rgb": [213, 173, 205],
         "cmyk": [9, 38, 0, 0],
@@ -2105,6 +2289,7 @@
         "colorText": "black"
     }, {
         "id": "d332a1bd-a2f8-4fff-955c-2682849f1997",
+        "visible": true,
         "name": "Neon Blue",
         "rgb": [19, 154, 202],
         "cmyk": [94, 6, 10, 2],
@@ -2116,6 +2301,7 @@
         "colorText": "black"
     }, {
         "id": "9f58e478-3309-429c-82da-e68fb3e1ee9a",
+        "visible": true,
         "name": "Neon Green",
         "rgb": [168, 200, 96],
         "cmyk": [45, 0, 81, 0],
@@ -2127,6 +2313,7 @@
         "colorText": "black"
     }, {
         "id": "7c5b8c25-3aa6-4d79-b189-f4409bad5b44",
+        "visible": true,
         "name": "Neon Orange",
         "rgb": [239, 194, 83],
         "cmyk": [0, 25, 79, 0],
@@ -2138,6 +2325,7 @@
         "colorText": "black"
     }, {
         "id": "66a9f9d8-fa59-4e78-b5c4-e6de33e87b0e",
+        "visible": true,
         "name": "Neon Pink",
         "rgb": [195, 106, 161],
         "cmyk": [10, 70, 1, 0],
@@ -2149,6 +2337,7 @@
         "colorText": "black"
     }, {
         "id": "4ee1eb19-ecaf-4c48-8374-222824069e24",
+        "visible": true,
         "name": "Neon Yellow",
         "rgb": [252, 232, 36],
         "cmyk": [1, 2, 96, 0],
@@ -2160,6 +2349,7 @@
         "colorText": "black"
     }, {
         "id": "d56c85ea-fedc-4982-84b3-42fecc526633",
+        "visible": true,
         "name": "Neon Yellow Green",
         "rgb": [246, 237, 99],
         "cmyk": [6, 0, 76, 0],
@@ -2171,6 +2361,7 @@
         "colorText": "black"
     }, {
         "id": "47dddce9-5591-40f5-8e08-c75bdae80e9d",
+        "visible": true,
         "name": "Parrot Green Light",
         "rgb": [129, 189, 181],
         "cmyk": [62, 1, 33, 0],
@@ -2182,6 +2373,7 @@
         "colorText": "black"
     }, {
         "id": "2809f28b-74fd-41c2-bc47-e326272527eb",
+        "visible": true,
         "name": "Pink Light",
         "rgb": [224, 163, 196],
         "cmyk": [1, 45, 1, 0],
@@ -2193,6 +2385,7 @@
         "colorText": "black"
     }, {
         "id": "1cbdc3cc-cc77-4fd0-b550-f542b9fd33eb",
+        "visible": true,
         "name": "Process Red Light",
         "rgb": [231, 187, 212],
         "cmyk": [1, 34, 0, 0],
@@ -2204,6 +2397,7 @@
         "colorText": "black"
     }, {
         "id": "bb0337f7-2c48-4917-90c2-fb83e6d0f47b",
+        "visible": true,
         "name": "Rhodamine Dark",
         "rgb": [148, 36, 127],
         "cmyk": [31, 98, 0, 3],
@@ -2215,6 +2409,7 @@
         "colorText": "white"
     }, {
         "id": "5677defb-4656-43fa-a23b-323be0b74680",
+        "visible": true,
         "name": "Rhodamine Light",
         "rgb": [217, 155, 191],
         "cmyk": [4, 49, 1, 0],
@@ -2226,6 +2421,7 @@
         "colorText": "black"
     }, {
         "id": "353fa687-f3de-47c3-9487-93a797d21848",
+        "visible": true,
         "name": "Turquoise Dark",
         "rgb": [26, 131, 197],
         "cmyk": [94, 26, 1, 3],
@@ -2237,6 +2433,7 @@
         "colorText": "black"
     }, {
         "id": "464cabcb-a92b-4158-b69b-9f8743618358",
+        "visible": true,
         "name": "Ultramarine Light",
         "rgb": [138, 174, 220],
         "cmyk": [55, 19, 0, 0],
@@ -2248,6 +2445,7 @@
         "colorText": "black"
     }, {
         "id": "3e5fcaec-cb86-41bd-8e32-5ae508e8251f",
+        "visible": true,
         "name": "Violet Blue Light",
         "rgb": [212, 176, 225],
         "cmyk": [63, 13, 1, 0],
@@ -2259,6 +2457,7 @@
         "colorText": "black"
     }, {
         "id": "14025ab1-f620-4f0e-9fa1-f2e427b652aa",
+        "visible": true,
         "name": "Violet Dark",
         "rgb": [63, 62, 139],
         "cmyk": [89, 87, 0, 3],
@@ -2270,6 +2469,7 @@
         "colorText": "white"
     }, {
         "id": "29897af2-49cc-4cb9-90ad-0e1cdd6e3c25",
+        "visible": true,
         "name": "Yellow Orange Light",
         "rgb": [239, 194, 83],
         "cmyk": [0, 25, 79, 0],
