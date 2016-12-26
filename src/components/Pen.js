@@ -12,9 +12,9 @@ export default class Pen extends Component{
 
   isActiveInEdit(user, colorId){
     if(PenStore.userHasColor(user, colorId) && PenStore.isEditing()){
-      return "hot"
+      return "hot "
     }else{
-      return ""
+      return " "
     }
   }
 
@@ -26,10 +26,18 @@ export default class Pen extends Component{
     }
   }
 
+  isInUserBox(user, colorId){
+    if(PenStore.userHasColor(user, colorId)){
+      return "inUserBox"
+    }else{
+      return ""
+    }
+  }
+
   render(){
     let {name, colorId, rgb} = this.props
     return(
-      <div className={"pen " + this.isActiveInEdit(this.user.id, colorId)} onClick={this.toggleInUserBox.bind(this, this.user.id, colorId)}>
+      <div className={"pen " + this.isActiveInEdit(this.user.id, colorId) + this.isInUserBox(this.user.id, colorId)} onClick={this.toggleInUserBox.bind(this, this.user.id, colorId)}>
         <Swatch rgb={rgb} colorId={colorId}/>
         <div className="titles">
           <p className="name">{name}</p>

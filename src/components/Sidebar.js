@@ -82,7 +82,7 @@ export default class Sidebar extends Component{
           <div className={"button " + this.isActive(FilterConst.NEUTRALGREY)} onClick={this.filterPens.bind(this, FilterConst.NEUTRALGREY)}>Neutral Grey</div>
           <div className={"button " + this.isActive(FilterConst.FRENCHGREY)} onClick={this.filterPens.bind(this, FilterConst.FRENCHGREY)}>French Grey</div>
           <div className="button segmentedButton">
-            <div className={" " + this.isActive(this.user.id)} onClick={this.filterPens.bind(this, this.user.id)}>Your Set</div>
+            <div className={this.isActive(this.user.id)} onClick={this.filterPens.bind(this, this.user.id)}>Your Set</div>
             <div className={"editButton " + this.editIsActive()} onClick={this.toggleEdit.bind(this)}>Edit</div>
           </div>
         </div>
