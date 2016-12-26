@@ -14,7 +14,7 @@ export default class Swatch extends Component{
   copy(hex){
     document.execCommand('copy', false, hex)
     let myColor = { background: hex, text: "#FFFFFF" };
-    notify.show("coppied " + hex, "custom", 2500, myColor)
+    notify.show(hex +": coppied" , "custom", 2500, myColor)
 
   }
 
