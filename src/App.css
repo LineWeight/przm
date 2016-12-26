@@ -27,8 +27,15 @@ h1{
   font-weight: 400;
 }
 
+h2{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
 h3{
   margin: 5px 0;
+  font-weight: 300;
 }
 
 .credit{
@@ -43,6 +50,7 @@ h3{
 
 button{
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 span.custom{
@@ -62,7 +70,6 @@ span.custom{
   min-width: 200px;
   max-width: 200px;
   padding: 20px;
-  position: fixed;
 }
 
 h1{
@@ -72,7 +79,6 @@ h1{
 .container{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 240px;
   padding-bottom: 40px;
 }
 
@@ -119,7 +125,7 @@ button:hover{
 .swatch{
   height: var(--swatch-height);
   min-width:var(--swatch-width);
-  border-radius: var(--large-corner) 0 0 var(--large-corner);
+  /*border-radius: var(--large-corner) 0 0 var(--large-corner);*/
   border-right: 1px dashed darkgrey;
   display: flex;
   justify-content: center;
@@ -138,7 +144,6 @@ button:hover{
   -webkit-transition: background-color .5s;
   height: 100%;
   width: 100%;
-  border-radius: var(--large-corner) 0 0 var(--large-corner);
   background-color: rgba(255,255,255,0);
   display: flex;
   justify-content: center;
@@ -180,4 +185,5 @@ button:hover{
   border-radius: var(--large-corner);
   border: 1px solid darkgrey;
   padding-right: 10px;
+  overflow: hidden;
 }

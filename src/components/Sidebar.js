@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Sticky } from 'react-sticky';
 import * as SortConst from '../constants/SortConst'
 import * as FilterConst from '../constants/FilterConst'
 import PenStore from '../stores/PenStore'
@@ -68,8 +69,10 @@ export default class Sidebar extends Component{
     return(
       <div className="sidebar">
           <Header/>
+          <Sticky>
             {this.renderButtons()}
             <p className="credit">based on data from <a href="http://swatchtool.com"> swatchtool.com </a></p>
+          </Sticky>
       </div>
     )
   }
