@@ -3,14 +3,15 @@ import Notifications from 'react-notify-toast'
 import './App.css';
 import uuid from 'uuid'
 import Pen from './components/Pen'
-import colorData from './Colors.json'
+import Header from './components/Header'
+import colorData from './Pens.json'
 
 class App extends Component {
 
   constructor(){
     super();
     let data = colorData;
-    data = this.organizeData(data)
+    // data = this.organizeData(data)
     this.state={
       pens: data
     }
@@ -37,11 +38,10 @@ class App extends Component {
         e.cmyk[f] = parseInt(e.cmyk[f], 10)
       }
     }
+    console.log(JSON.stringify(data))
     return data
+
   }
-
-
-
 
   sortPens(flag){
 
@@ -107,26 +107,34 @@ class App extends Component {
     return pens
   }
 
+  renderButtons(){
+    return(
+
+    <div className="buttonGroup">
+      <div className="buttonSubGroup">
+        <button onClick={this.sortPens.bind(this, "COLOR_ID")}>Color ID</button>
+        <button onClick={this.sortPens.bind(this, "NAME")}>Name</button>
+        <button onClick={this.sortPens.bind(this, "ORG_ID")}>Relatedness</button>
+      </div>
+      <div className="buttonSubGroup">
+        <button onClick={this.filterPens.bind(this,"200")}>All</button>
+        <button onClick={this.filterPens.bind(this,"Portrait")}>Portrait</button>
+        <button onClick={this.filterPens.bind(this,"PrimarySecondary")}>Primary Secondary</button>
+        <button onClick={this.filterPens.bind(this,"CoolGrey")}>Cool Grey</button>
+        <button onClick={this.filterPens.bind(this,"WarmGrey")}>Warm Grey</button>
+        <button onClick={this.filterPens.bind(this,"NeutralGrey")}>Neutral Grey</button>
+        <button onClick={this.filterPens.bind(this,"FrenchGrey")}>French Grey</button>
+      </div>
+    </div>
+    )
+  }
+
   render() {
     return (
       <div className="app">
         <Notifications/>
-        <div className="buttonGroup">
-          <div className="buttonSubGroup">
-            <button onClick={this.sortPens.bind(this, "COLOR_ID")}>Color ID</button>
-            <button onClick={this.sortPens.bind(this, "NAME")}>Name</button>
-            <button onClick={this.sortPens.bind(this, "ORG_ID")}>Relatedness</button>
-          </div>
-          <div className="buttonSubGroup">
-            <button onClick={this.filterPens.bind(this,"200")}>All</button>
-            <button onClick={this.filterPens.bind(this,"Portrait")}>Portrait</button>
-            <button onClick={this.filterPens.bind(this,"PrimarySecondary")}>Primary Secondary</button>
-            <button onClick={this.filterPens.bind(this,"CoolGrey")}>Cool Grey</button>
-            <button onClick={this.filterPens.bind(this,"WarmGrey")}>Warm Grey</button>
-            <button onClick={this.filterPens.bind(this,"NeutralGrey")}>Neutral Grey</button>
-            <button onClick={this.filterPens.bind(this,"FrenchGrey")}>French Grey</button>
-          </div>
-        </div>
+        <Header/>
+        {this.renderButtons()}
         <div className="wrap">
           {this.renderPens(this.state.pens, this.state.f)}
         </div>
