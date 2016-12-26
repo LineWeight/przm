@@ -5,8 +5,14 @@ import * as FilterConst from '../constants/FilterConst'
 import PenStore from '../stores/PenStore'
 import * as Actions from '../actions/Actions'
 import Header from './Header'
+import User from './User'
 
 export default class Sidebar extends Component{
+
+  constructor(){
+    super()
+    this.user = User.instance
+  }
 
   componentWillMount(){
     PenStore.on("change", this.updateFlags.bind(this))
@@ -40,30 +46,52 @@ export default class Sidebar extends Component{
     }
   }
 
+  toggleEdit(){
+    if(!PenStore.isEditing()){
+      Actions.beginEdit()
+    }else{
+      Actions.endEdit()
+    }
+  }
+
+  editIsActive(){
+    if(PenStore.isEditing()){
+      return "editActive"
+    }else{
+      return ""
+    }
+  }
+
   renderButtons(){
     return(
 
       <div className="buttonGroup">
         <h3>Sort</h3>
         <div className="buttonSubGroup">
-          <button className={this.isActive(SortConst.COLOR)} onClick={this.sortPens.bind(this, SortConst.COLOR)}>Color ID</button>
-          <button className={this.isActive(SortConst.NAME)} onClick={this.sortPens.bind(this, SortConst.NAME)}>Name</button>
-          <button className={this.isActive(SortConst.ORG)} onClick={this.sortPens.bind(this, SortConst.ORG)}>Relatedness</button>
+          <div className={"button " + this.isActive(SortConst.COLOR)} onClick={this.sortPens.bind(this, SortConst.COLOR)}>Color ID</div>
+          <div className={"button " + this.isActive(SortConst.NAME)} onClick={this.sortPens.bind(this, SortConst.NAME)}>Name</div>
+          <div className={"button " + this.isActive(SortConst.ORG)} onClick={this.sortPens.bind(this, SortConst.ORG)}>Relatedness</div>
         </div>
         <h3>Filter</h3>
-        <div className="buttonSubGroup">
-          <button className={this.isActive(FilterConst.ALL)} onClick={this.filterPens.bind(this, FilterConst.ALL)}>All</button>
-          <button className={this.isActive(FilterConst.PORTRAIT)} onClick={this.filterPens.bind(this, FilterConst.PORTRAIT)}>Portrait</button>
-          <button className={this.isActive(FilterConst.PRIMARYSECONDARY)} onClick={this.filterPens.bind(this, FilterConst.PRIMARYSECONDARY)}>Primary Secondary</button>
-          <button className={this.isActive(FilterConst.COOLGREY)} onClick={this.filterPens.bind(this, FilterConst.COOLGREY)}>Cool Grey</button>
-          <button className={this.isActive(FilterConst.WARMGREY)} onClick={this.filterPens.bind(this, FilterConst.WARMGREY)}>Warm Grey</button>
-          <button className={this.isActive(FilterConst.NEUTRALGREY)} onClick={this.filterPens.bind(this, FilterConst.NEUTRALGREY)}>Neutral Grey</button>
-          <button className={this.isActive(FilterConst.FRENCHGREY)} onClick={this.filterPens.bind(this, FilterConst.FRENCHGREY)}>French Grey</button>
+        <div className="divSubGroup">
+          <div className={"button " + this.isActive(FilterConst.ALL)} onClick={this.filterPens.bind(this, FilterConst.ALL)}>All</div>
+          <div className={"button " + this.isActive(FilterConst.PORTRAIT)} onClick={this.filterPens.bind(this, FilterConst.PORTRAIT)}>Portrait</div>
+          <div className={"button " + this.isActive(FilterConst.PRIMARYSECONDARY)} onClick={this.filterPens.bind(this, FilterConst.PRIMARYSECONDARY)}>Primary Secondary</div>
+          <div className={"button " + this.isActive(FilterConst.COOLGREY)} onClick={this.filterPens.bind(this, FilterConst.COOLGREY)}>Cool Grey</div>
+          <div className={"button " + this.isActive(FilterConst.WARMGREY)} onClick={this.filterPens.bind(this, FilterConst.WARMGREY)}>Warm Grey</div>
+          <div className={"button " + this.isActive(FilterConst.NEUTRALGREY)} onClick={this.filterPens.bind(this, FilterConst.NEUTRALGREY)}>Neutral Grey</div>
+          <div className={"button " + this.isActive(FilterConst.FRENCHGREY)} onClick={this.filterPens.bind(this, FilterConst.FRENCHGREY)}>French Grey</div>
+          <div className="button segmentedButton">
+            <div className={" " + this.isActive(this.user.id)} onClick={this.filterPens.bind(this, this.user.id)}>Your Set</div>
+            <div className={"editButton " + this.editIsActive()} onClick={this.toggleEdit.bind(this)}>Edit</div>
+          </div>
         </div>
       </div>
 
     )
   }
+
+
 
   render(){
     return(

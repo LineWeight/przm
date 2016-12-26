@@ -6,11 +6,18 @@ import penData from '../Pens.json'
 
 class PenStore extends EventEmitter {
 
+
+
   constructor(){
     super()
     this.pens = penData
     this.filterFlag = FilterConst.ALL
     this.sortFlag = SortConst.ORG
+    this.isCurrentlyEditing = false
+  }
+
+  isEditing(){
+    return this.isCurrentlyEditing
   }
 
   getPenList(){
@@ -79,12 +86,29 @@ class PenStore extends EventEmitter {
 
   filterPens(filterFlag){
     for(let e of this.pens){
-      if(e.groups[filterFlag]){
+      if(e.groups[filterFlag] || e.users[filterFlag]){
         e.visible = true;
       }else{
         e.visible = false;
       }
     }
+  }
+
+  userHasColor(user, colorId){
+    let pen = this.pens.find((x) => x.colorId === colorId)
+    return pen.users[user]
+  }
+
+  addPenToUser(user, colorId){
+    let pen = this.pens.find((x) => x.colorId === colorId)
+    pen.users[user] = true
+    this.emit("change")
+  }
+
+  removePenFromUser(user, colorId){
+    let pen = this.pens.find((x)=> x.colorId === colorId)
+    delete(pen.users[user])
+    this.emit("change")
   }
 
   handleActions(action){
@@ -95,6 +119,20 @@ class PenStore extends EventEmitter {
         break;
       case "SORT_PENS":
         this.sortFlag = action.sortFlag
+        this.emit("change")
+        break;
+      case "USER_ADD_PEN":
+        this.addPenToUser(action.user, action.colorId);
+        break;
+      case "USER_REMOVE_PEN":
+        this.removePenFromUser(action.user, action.colorId);
+        break;
+      case "BEGIN_EDIT":
+        this.isCurrentlyEditing = true
+        this.emit("change")
+        break;
+      case "END_EDIT":
+        this.isCurrentlyEditing = false
         this.emit("change")
         break;
       default:

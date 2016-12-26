@@ -18,13 +18,15 @@
 
 }
 
-h1, h2, h3, p, button{
+h1, h2, h3, p, .button{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
 
 h1{
   font-weight: 400;
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
 h2{
@@ -39,16 +41,14 @@ h3{
 }
 
 .credit{
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .swatchId{
   margin:0;
 }
 
-
-
-button{
+.button{
   font-size: 14px;
   margin-bottom: 5px;
 }
@@ -58,7 +58,6 @@ span.custom{
   font-weight: 400;
   box-shadow: 0px 0px 5px darkgrey;
   text-shadow: 0px 0px 3px darkgrey;
-  /*border: 1px dashed darkgrey*/
 }
 
 .cols{
@@ -87,11 +86,11 @@ h1{
 }
 
 .buttonSubGroup{
-  padding-bottom: 20px;
+  margin-bottom: 20px !important;
   display: block;
 }
 
-button{
+.button{
   border-radius: var(--small-corner);
   background-color: white;
   transition: background-color .5s;
@@ -103,15 +102,54 @@ button{
   text-decoration: none;
   display: block;
   width: 100%;
+  box-sizing: border-box;
 }
 
-button.active{
+.button:hover{
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.segmentedButton{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+}
+
+.segmentedButton:hover{
+  background-color: white !important;
+}
+
+.segmentedButton *{
+  padding: 10px 15px;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+}
+
+.hot{
+  box-shadow: 0px 0px 5px #b8d4ff;
+}
+
+.segmentedButton *:hover{
+  background-color: #ddd
+}
+
+.segmentedButton *:first-child {
+  flex-grow: 1;
+  border-right: 1px solid darkgrey;
+}
+
+.segmentedButton *:last-child{
+  width: 25px;
+}
+
+
+.active{
   background-color: #eee;
 }
 
-button:hover{
-  background-color: #ddd;
-  cursor: pointer;
+.editActive{
+  background-color: #b8d4ff !important;
 }
 
 .wrap{
@@ -173,7 +211,6 @@ button:hover{
   margin: 0;
   font-size: 12px;
 }
-
 
 .pen{
   width: 155px;
