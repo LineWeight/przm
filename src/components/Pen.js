@@ -1,14 +1,8 @@
 import React, {Component} from 'react'
 import Swatch from './Swatch'
-import User from './User'
 import PenStore from '../stores/PenStore'
 import * as Actions from '../actions/Actions'
 export default class Pen extends Component{
-
-  constructor(){
-    super()
-    this.user = User.instance
-  }
 
   isActiveInEdit(user, colorId){
     if(PenStore.userHasColor(user, colorId) && PenStore.isEditing()){
@@ -35,9 +29,10 @@ export default class Pen extends Component{
   }
 
   render(){
+    const {user} = this.props
     let {name, colorId, rgb} = this.props
     return(
-      <div className={"pen " + this.isActiveInEdit(this.user.id, colorId) + this.isInUserBox(this.user.id, colorId)} onClick={this.toggleInUserBox.bind(this, this.user.id, colorId)}>
+      <div className={"pen " + this.isActiveInEdit(user.id, colorId) + this.isInUserBox(user.id, colorId)} onClick={this.toggleInUserBox.bind(this, user.id, colorId)}>
         <Swatch rgb={rgb} colorId={colorId}/>
         <div className="titles">
           <p className="name">{name}</p>

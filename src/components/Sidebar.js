@@ -5,14 +5,8 @@ import * as FilterConst from '../constants/FilterConst'
 import PenStore from '../stores/PenStore'
 import * as Actions from '../actions/Actions'
 import Header from './Header'
-import User from './User'
 
 export default class Sidebar extends Component{
-
-  constructor(){
-    super()
-    this.user = User.instance
-  }
 
   componentWillMount(){
     PenStore.on("change", this.updateFlags.bind(this))
@@ -63,6 +57,8 @@ export default class Sidebar extends Component{
   }
 
   renderButtons(){
+
+    const {user} = this.props
     return(
 
       <div className="buttonGroup">
@@ -82,7 +78,7 @@ export default class Sidebar extends Component{
           <div className={"button " + this.isActive(FilterConst.NEUTRALGREY)} onClick={this.filterPens.bind(this, FilterConst.NEUTRALGREY)}>Neutral Grey</div>
           <div className={"button " + this.isActive(FilterConst.FRENCHGREY)} onClick={this.filterPens.bind(this, FilterConst.FRENCHGREY)}>French Grey</div>
           <div className="button segmentedButton">
-            <div className={this.isActive(this.user.id)} onClick={this.filterPens.bind(this, this.user.id)}>Your Set</div>
+            <div className={this.isActive(user.id)} onClick={this.filterPens.bind(this, user.id)}>Your Set</div>
             <div className={"editButton " + this.editIsActive()} onClick={this.toggleEdit.bind(this)}>Edit</div>
           </div>
         </div>

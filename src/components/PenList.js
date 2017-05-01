@@ -23,7 +23,7 @@ export default class PenList extends Component{
   renderPens(){
     let pens = []
     for(let p of this.state.pens){
-        pens.push(<Pen key={p.id} name={p.name} colorId={p.colorId} rgb={p.rgb} />)
+        pens.push(<Pen {...this.props} key={p.id} name={p.name} colorId={p.colorId} rgb={p.rgb} />)
     }
     return pens
   }
