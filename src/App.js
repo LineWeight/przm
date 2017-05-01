@@ -4,7 +4,7 @@ import {StickyContainer} from 'react-sticky'
 import './App.css';
 import PenList from './components/PenList'
 import Sidebar from './components/Sidebar'
-
+import firebase from './constants/Firebase'
 
 
 
