@@ -1,5 +1,6 @@
 {
   "projects": {
-    "beta": "przm-b4311"
+    "beta": "przm-b4311",
+    "default": "przm-b4311"
   }
 }
