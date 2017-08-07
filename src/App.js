@@ -1,35 +1,32 @@
 import React, { Component } from 'react'
 import Notifications from 'react-notify-toast'
-import {StickyContainer} from 'react-sticky'
+import { StickyContainer } from 'react-sticky'
 import firebase from './constants/Firebase'
 import PenList from './components/PenList'
 import Sidebar from './components/Sidebar'
-import './App.css';
-
-
+import './App.css'
 
 class App extends Component {
 
-  constructor(){
-    super();
+  constructor () {
+    super()
     this.state = {
       user: {
         id: 1
       }
     }
   }
-  
-  updateUser(user){
+
+  updateUser (user) {
     this.setState({
-      user
-    })
+    user})
   }
 
-  componentWillMount(){
+  componentWillMount () {
     firebase.auth().onAuthStateChanged(user => {
-      if(user){
+      if (user) {
         this.updateUser(user)
-      }else{
+      }else {
         this.updateUser({
           id: 1
         })
@@ -37,14 +34,14 @@ class App extends Component {
     })
   }
 
-  render() {
+  render () {
     return (
-      <div className="app">
+      <div>
         <StickyContainer>
-          <Notifications/>
-          <div className="cols">
-            <Sidebar user={this.state.user}/>
-            <PenList user={this.state.user}/>
+          <Notifications />
+          <div className='app'>
+            <Sidebar user={this.state.user} />
+            <PenList user={this.state.user} />
           </div>
         </StickyContainer>
       </div>
@@ -52,4 +49,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App

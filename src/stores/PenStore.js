@@ -1,14 +1,12 @@
-import {EventEmitter} from 'events'
+import { EventEmitter } from 'events'
 import * as SortConst from '../constants/SortConst'
 import * as FilterConst from '../constants/FilterConst'
-import dispatcher from "../dispatcher"
+import dispatcher from '../dispatcher'
 import penData from '../Pens.json'
 
 class PenStore extends EventEmitter {
 
-
-
-  constructor(){
+  constructor () {
     super()
     this.pens = penData
     this.filterFlag = FilterConst.ALL
@@ -16,54 +14,53 @@ class PenStore extends EventEmitter {
     this.isCurrentlyEditing = false
   }
 
-  isEditing(){
+  isEditing () {
     return this.isCurrentlyEditing
   }
 
-  getPenList(){
+  getPenList () {
     let pens = []
     this.sortPens(this.sortFlag)
     this.filterPens(this.filterFlag)
-    for(let p of this.pens){
-      if(p.visible){
+    for (let p of this.pens) {
+      if (p.visible) {
         pens.push(p)
       }
     }
     return pens
   }
 
-  getFilter(){
+  getFilter () {
     return this.filterFlag
   }
 
-  getSort(){
+  getSort () {
     return this.sortFlag
   }
 
-  sortPens(sortFlag){
-
-    function colorIdSort(a,b){
-      if(a.colorId > b.colorId){
+  sortPens (sortFlag) {
+    function colorIdSort (a, b) {
+      if (a.colorId > b.colorId) {
         return 1
-      }else if(a.colorId < b.colorId){
+      }else if (a.colorId < b.colorId) {
         return -1
       }
       return 0
     }
 
-    function nameSort(a,b){
-      if(a.name > b.name){
+    function nameSort (a, b) {
+      if (a.name > b.name) {
         return 1
-      }else if(a.name < b.name){
+      }else if (a.name < b.name) {
         return -1
       }
       return 0
     }
 
-    function orgIdSort(a,b){
-      if(a.orgId > b.orgId){
+    function orgIdSort (a, b) {
+      if (a.orgId > b.orgId) {
         return 1
-      }else if(a.orgId < b.orgId){
+      }else if (a.orgId < b.orgId) {
         return -1
       }
       return 0
@@ -72,69 +69,69 @@ class PenStore extends EventEmitter {
     switch (sortFlag) {
       case SortConst.COLOR:
         this.pens.sort(colorIdSort)
-        break;
+        break
       case SortConst.NAME:
         this.pens.sort(nameSort)
-        break;
+        break
       case SortConst.ORG:
         this.pens.sort(orgIdSort)
-        break;
+        break
       default:
 
     }
   }
 
-  filterPens(filterFlag){
-    for(let e of this.pens){
-      if(e.groups[filterFlag] || e.users[filterFlag]){
-        e.visible = true;
-      }else{
-        e.visible = false;
+  filterPens (filterFlag) {
+    for (let e of this.pens) {
+      if (e.groups[filterFlag] || e.users[filterFlag]) {
+        e.visible = true
+      }else {
+        e.visible = false
       }
     }
   }
 
-  userHasColor(user, colorId){
+  userHasColor (user, colorId) {
     let pen = this.pens.find((x) => x.colorId === colorId)
     return pen.users[user]
   }
 
-  addPenToUser(user, colorId){
+  addPenToUser (user, colorId) {
     let pen = this.pens.find((x) => x.colorId === colorId)
     pen.users[user] = true
-    this.emit("change")
+    this.emit('change')
   }
 
-  removePenFromUser(user, colorId){
-    let pen = this.pens.find((x)=> x.colorId === colorId)
-    delete(pen.users[user])
-    this.emit("change")
+  removePenFromUser (user, colorId) {
+    let pen = this.pens.find((x) => x.colorId === colorId)
+    delete (pen.users[user])
+    this.emit('change')
   }
 
-  handleActions(action){
+  handleActions (action) {
     switch (action.type) {
-      case "FILTER_PENS":
+      case 'FILTER_PENS':
         this.filterFlag = action.filterFlag
-        this.emit("change")
-        break;
-      case "SORT_PENS":
+        this.emit('change')
+        break
+      case 'SORT_PENS':
         this.sortFlag = action.sortFlag
-        this.emit("change")
-        break;
-      case "USER_ADD_PEN":
-        this.addPenToUser(action.user, action.colorId);
-        break;
-      case "USER_REMOVE_PEN":
-        this.removePenFromUser(action.user, action.colorId);
-        break;
-      case "BEGIN_EDIT":
+        this.emit('change')
+        break
+      case 'USER_ADD_PEN':
+        this.addPenToUser(action.user, action.colorId)
+        break
+      case 'USER_REMOVE_PEN':
+        this.removePenFromUser(action.user, action.colorId)
+        break
+      case 'BEGIN_EDIT':
         this.isCurrentlyEditing = true
-        this.emit("change")
-        break;
-      case "END_EDIT":
+        this.emit('change')
+        break
+      case 'END_EDIT':
         this.isCurrentlyEditing = false
-        this.emit("change")
-        break;
+        this.emit('change')
+        break
       default:
     }
   }
