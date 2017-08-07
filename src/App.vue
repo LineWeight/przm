@@ -1,15 +1,15 @@
 <template lang="html">
-  <welcome></welcome>
+  <Sidebar></Sidebar>
 </template>
 
 <script>
 
-import Welcome from './components/Welcome.vue'
+import Sidebar from './components/Sidebar.vue'
 
 export default {
   name: 'app',
-  components:{
-    Welcome
+  components: {
+    Sidebar
   },
   computed: {
 
