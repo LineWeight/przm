@@ -1,7 +1,0 @@
-export const ALL = "200"
-export const PORTRAIT = "Portrait"
-export const PRIMARYSECONDARY = "PrimarySecondary"
-export const COOLGREY = "CoolGrey"
-export const WARMGREY = "WarmGrey"
-export const NEUTRALGREY = "NeutralGrey"
-export const FRENCHGREY = "FrenchGrey"
