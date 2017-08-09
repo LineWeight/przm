@@ -1,13 +1,15 @@
 <template lang="html">
   <div class="wrapper">
 
-  <div class="sidebar">
+  <div  class="sidebar">
     <div class="header">
       <h1>{{title}}</h1>
       <h2>{{subtitle}}</h2>
     </div>
     <div class="buttons">
-      
+      <template v-for="slug in groups">
+        <btn :slug="slug" @filterChanged="filter($event)" ></btn>
+      </template>
     </div>
   </div>
   <div class="pens">
@@ -22,18 +24,28 @@
 
 import { db } from './firebase'
 import pen from './components/Pen.vue'
+import btn from './components/Button.vue'
 
 export default {
   name: 'app',
   components: {
-    pen
+    pen, btn
   },
   data: () => ({
     title: "Przm",
     subtitle: "Reference Guide for Prismacolor Premium Art Markers",
     filterFlag: null,
-    sortFlag: "orgId"
+    sortFlag: "orgId",
+    groups: ['all', 'warm grey', 'neutral grey', 'cool grey', 'french grey', 'portrait', 'primary secondary',]
   }),
+  methods: {
+    log(a) {
+      console.log(a)
+    },
+    filter(a) {
+      this.filterFlag = a;
+    }
+  },
   firebase: {
     pens: {
       source: db.ref('pens')
@@ -41,9 +53,13 @@ export default {
   },
   computed: {
     organizedPens: function () {
+      let ff = this.filterFlag;
+      if (ff === 'All') {
+        ff = null;
+      }
       return this.pens.filter(x => {
-        if (this.filterFlag != null) {
-          return x.groups[this.filterFlag] != null
+        if (ff != null) {
+          return x.groups[ff] != null
         }
         return true
       }).sort((x, y) => {
