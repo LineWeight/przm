@@ -11,20 +11,27 @@
     </div>
   </div>
   <div class="pens">
-    
+    <p v-for="pen of pens">
+      {{pen.name}}
+    </p>
   </div>
   </div>
 </template>
 
 <script>
 
+import { db } from './firebase'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      title: "Przm",
-      subtitle: "Reference Guide for Prismacolor Premium Art Markers"
+  data: () => ({
+    pens: {},
+    title: "Przm",
+    subtitle: "Reference Guide for Prismacolor Premium Art Markers"
+  }),
+  firebase: {
+    pens: {
+      source: db.ref('pens')
     }
   }
 

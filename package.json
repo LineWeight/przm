@@ -36,6 +36,8 @@
   },
   "homepage": "https://github.com/trevorsargent/boiler#readme",
   "dependencies": {
-    "eslint": "^4.4.1"
+    "eslint": "^4.4.1",
+    "firebase": "^4.2.0",
+    "vuefire": "^1.4.3"
   }
 }
