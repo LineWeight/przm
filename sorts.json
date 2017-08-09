@@ -1,0 +1,14 @@
+[
+	{
+		"title": "Name",
+		"slug": "name"
+	},
+	{
+		"title": "Relatedness",
+		"slug": "orgId"
+	},
+	{
+		"title": "Color ID",
+		"slug": "colorId"
+	}
+]

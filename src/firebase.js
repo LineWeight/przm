@@ -9,4 +9,6 @@ const firebaseApp = Firebase.initializeApp({
   messagingSenderId: '1072656352091'
 })
 
+export const twitterProvider = new Firebase.auth.TwitterAuthProvider()
 export const db = firebaseApp.database()
+export const auth = firebaseApp.auth()

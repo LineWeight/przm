@@ -1,15 +1,9 @@
 .button{
+	display: grid;
+	overflow: hidden;
 	width: 100%;
 	margin:0;
-	background-color: white;
-	border: 1px solid darkgray;
 	border-radius: 5px;
+	border: 1px solid darkgray;
 }
 
-.actionArea{
-transition: background-color .25s ease-in-out;	
-}
-
-.actionArea:hover{
-	background-color: lightgray;
-}

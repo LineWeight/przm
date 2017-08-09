@@ -1,0 +1,30 @@
+[
+	{
+		"title": "All",
+		"slug": "200"
+	},
+	{
+		"title": "Warm Grey",
+		"slug": "WarmGrey"
+	},
+	{
+		"title": "Neutral Grey",
+		"slug": "NeutralGrey"
+	},
+	{
+		"title": "Cool Grey",
+		"slug": "CoolGrey"
+	},
+	{
+		"title": "French Grey",
+		"slug": "FrenchGrey"
+	},
+	{
+		"title": "Portrait",
+		"slug": "Portrait"
+	},
+	{
+		"title": "Primary / Secondary",
+		"slug": "PrimarySecondary"
+	}
+]

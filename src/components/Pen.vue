@@ -1,5 +1,5 @@
 <template>
-	<div class="pen">
+	<div @click="click()" class="pen">
 		<div :style="style" @mouseleave="mouseOff()" @mouseover="mouseOver()" class="swatch">
 			<p>{{pen.colorId}}</p>
 		</div>
@@ -22,6 +22,10 @@ export default {
 		},
 		mouseOff() {
 			this.hovering = false;
+		},
+		click() {
+			this.$emit("penClicked", this.pen.colorId)
+
 		}
 	},
 	computed: {
