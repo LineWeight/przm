@@ -1,16 +1,18 @@
 <template>
-	<div @click="click()" class="pen">
-		<div :style="style" @mouseleave="mouseOff()" @mouseover="mouseOver()" class="swatch">
-			<p>{{pen.colorId}}</p>
+	<div @click="click()" class="pen" @mouseleave="mouseOff()" @mouseover="mouseOver()">
+		<div :class="{full: this.isInUserSet}" :style="swatchStyle" class="swatch">
 		</div>
-		<p class="name">{{pen.name}}</p>
+		<div class="penInfo">
+			<p class="colorId">{{pen.colorId}}</p>
+			<p :class="{lightText: this.isInUserSet}" class="name">{{pen.name}}</p>
+		</div>
 	</div>
 </template>
 
 <script>
 
 export default {
-	props: ["pen"],
+	props: ["pen", "isInUserSet"],
 	data() {
 		return {
 			hovering: false
@@ -38,16 +40,20 @@ export default {
 
 		},
 
-		style() {
+		swatchStyle() {
 			let c = this.pen.rgb
 			let ctext = c[0] + ',' + c[1] + ',' + c[2] + ','
+			let style = ""
 			if (this.hovering) {
 				// return 'background: red;'
-				return 'background: rgba(' + ctext + ' .8);'
+				style += 'background: rgba(' + ctext + ' .8);'
+			} else {
+				style += 'background: rgba(' + ctext + ' 1);'
 			}
-			return 'background: rgba(' + ctext + ' 1);'
+			return style;
 			// return 'background: ' + this.hexColor + ";"
-		}
+		},
+
 	}
 }
 
@@ -55,30 +61,53 @@ export default {
 
 <style scoped>
 	.swatch {
-		display: flex;
-		transition: background-color .25s ease-out;
+		transition: width .25s;
+		height: 100%;
+		width: 30%;
+		position: absolute;
+		transition: all .25s;
 		align-items: center;
 		justify-content: center;
-		color: white;
-		text-shadow: 0 0 5px white;
 		cursor: pointer;
 		border-right: 1px lightgray dashed;
 	}
 	
+	.full {
+		width: 100%;
+	}
+	
 	.name {
+		transition: all .25s ease-out;
 		align-self: center;
 		margin: 0 10px;
 		font-weight: 300;
 	}
 	
-	.pen {
+	.colorId {
+		text-align: center;
+		color: white;
+		text-shadow: 0 0 5px darkgray;
+	}
 	
+	.pen {
 		border: 1px solid darkgray;
 		border-radius: 5px;
 		overflow: hidden;
+		position: relative;
+	}
 	
+	.penInfo {
+		position: absolute;
+		width: 100%;
+		height: 100%;
 		display: grid;
-		text-align: start;
-		grid-template-columns: 2fr 5fr;
+		grid-template-columns: 3fr 7fr;
+		align-items: center;
+	}
+	
+	.lightText {
+	
+		color: white;
+		text-shadow: 0 0 5px darkgray;
 	}
 </style>
