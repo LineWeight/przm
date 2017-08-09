@@ -7,10 +7,15 @@
       <h2>{{subtitle}}</h2>
     </div>
     <div class="buttons">
-      <template v-for="slug in groups">
-        <btn :slug="slug" @filterChanged="filter($event)" ></btn>
-      </template>
-    </div>
+
+        <template v-for="slug in groups">
+          <filterButton :slug="slug" @filterChanged="setFilterFlag($event)" ></filterButton>
+        </template>
+
+        <template v-for="sort in sorts">
+          <sortButton :slug="sort.slug" :title="sort.title" @sortChanged="setSortFlag($event)"></sortButton>
+        </template>
+      </div>
   </div>
   <div class="pens">
     <template v-for="pen of organizedPens">
@@ -24,26 +29,41 @@
 
 import { db } from './firebase'
 import pen from './components/Pen.vue'
-import btn from './components/Button.vue'
+import filterButton from './components/FilterButton.vue'
+import sortButton from './components/SortButton.vue'
 
 export default {
   name: 'app',
   components: {
-    pen, btn
+    pen, filterButton, sortButton
   },
   data: () => ({
     title: "Przm",
     subtitle: "Reference Guide for Prismacolor Premium Art Markers",
     filterFlag: null,
     sortFlag: "orgId",
-    groups: ['all', 'warm grey', 'neutral grey', 'cool grey', 'french grey', 'portrait', 'primary secondary',]
+    groups: ['all', 'warm grey', 'neutral grey', 'cool grey', 'french grey', 'portrait', 'primary secondary'],
+    sorts: [
+      {
+        title: "Name",
+        slug: "name"
+      }, {
+        title: "Relatedness",
+        slug: "orgId"
+      }, {
+        title: "Color ID",
+        slug: "colorId"
+      }]
   }),
   methods: {
     log(a) {
       console.log(a)
     },
-    filter(a) {
+    setFilterFlag(a) {
       this.filterFlag = a;
+    },
+    setSortFlag(a) {
+      this.sortFlag = a;
     }
   },
   firebase: {
