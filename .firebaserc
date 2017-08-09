@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "przm-b4311"
+    "staging": "przm-staging",
+    "production": "przm-public"
   }
 }
