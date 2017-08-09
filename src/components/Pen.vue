@@ -64,11 +64,12 @@ export default {
 .name {
 	align-self: center;
 	margin: 0 10px;
+	font-weight: 300;
 }
 
 .pen {
 
-	border: 1px solid lightgrey;
+	border: 1px solid darkgray;
 	border-radius: 5px;
 	overflow: hidden;
 

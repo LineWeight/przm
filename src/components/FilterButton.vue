@@ -1,5 +1,5 @@
 <template>
-	<button @click="onClick()">
+	<button class="button actionArea" @click="onClick()">
 		{{title}}
 	</button>
 </template>

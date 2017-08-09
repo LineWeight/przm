@@ -1,14 +1,29 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
 body{
   font-family: 'Lato', 'helvetica-neue', sans-serif;
 }
 
 h1{
-  font-weight: 300;
-  font-size: 5em;
+  font-weight: 400;
+  font-size: 4em;
+  margin-left: -2px;
+  margin-bottom: 5px;
 }
 
-h2{
+h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+h3 {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 20px;
   font-weight: 300;
-  margin-left: 7px;
+}
+
+.button{
+  font-size: 1em;
+  font-family: 'Lato', 'helvetica-neue', sans-serif;
+  font-weight: 300;
 }
