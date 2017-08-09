@@ -54,31 +54,31 @@ export default {
 </script>
 
 <style scoped>
-.swatch {
-	display: flex;
-	transition: background-color .25s ease-out;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	text-shadow: 0 0 5px white;
-	cursor: pointer;
-	border-right: 1px lightgray dashed;
-}
-
-.name {
-	align-self: center;
-	margin: 0 10px;
-	font-weight: 300;
-}
-
-.pen {
-
-	border: 1px solid darkgray;
-	border-radius: 5px;
-	overflow: hidden;
-
-	display: grid;
-	text-align: start;
-	grid-template-columns: 2fr 5fr;
-}
+	.swatch {
+		display: flex;
+		transition: background-color .25s ease-out;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		text-shadow: 0 0 5px white;
+		cursor: pointer;
+		border-right: 1px lightgray dashed;
+	}
+	
+	.name {
+		align-self: center;
+		margin: 0 10px;
+		font-weight: 300;
+	}
+	
+	.pen {
+	
+		border: 1px solid darkgray;
+		border-radius: 5px;
+		overflow: hidden;
+	
+		display: grid;
+		text-align: start;
+		grid-template-columns: 2fr 5fr;
+	}
 </style>

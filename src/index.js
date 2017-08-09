@@ -17,6 +17,6 @@ import './style.css'
 Vue.use(VueFire)
 
 new Vue({
-  el: '#app',
-  render: h => h(App)
+	el: '#app',
+	render: h => h(App)
 })
