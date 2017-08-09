@@ -58,11 +58,12 @@ export default {
 	color: white;
 	text-shadow: 0 0 5px white;
 	cursor: pointer;
+	border-right: 1px lightgray dashed;
 }
 
 .name {
 	align-self: center;
-	margin-left: 10px;
+	margin: 0 10px;
 }
 
 .pen {
@@ -73,6 +74,6 @@ export default {
 
 	display: grid;
 	text-align: start;
-	grid-template-columns: 3fr 5fr;
+	grid-template-columns: 2fr 5fr;
 }
 </style>
