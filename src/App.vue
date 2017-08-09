@@ -11,9 +11,9 @@
     </div>
   </div>
   <div class="pens">
-    <p v-for="pen of pens">
-      {{pen.name}}
-    </p>
+    <template v-for="pen of pens">
+      <pen :pen="pen"></pen>
+    </template>
   </div>
   </div>
 </template>
@@ -21,9 +21,13 @@
 <script>
 
 import { db } from './firebase'
+import pen from './components/Pen.vue'
 
 export default {
   name: 'app',
+  components: {
+    pen
+  },
   data: () => ({
     pens: {},
     title: "Przm",
@@ -38,3 +42,12 @@ export default {
 }
 
 </script>
+
+<style>
+.pens {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-auto-rows: 50px;
+  grid-gap: 20px;
+}
+</style>
