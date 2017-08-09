@@ -1,0 +1,28 @@
+[debug] [2017-08-09T21:24:23.612Z] ----------------------------------------------------------------------
+[debug] [2017-08-09T21:24:23.615Z] Command:      /usr/local/Cellar/node/8.1.0_1/bin/node /usr/local/Cellar/node/8.1.0_1/bin/firebase serve
+[debug] [2017-08-09T21:24:23.615Z] CLI Version:  3.9.1
+[debug] [2017-08-09T21:24:23.615Z] Platform:     darwin
+[debug] [2017-08-09T21:24:23.615Z] Node Version: v8.2.1
+[debug] [2017-08-09T21:24:23.616Z] Time:         Wed Aug 09 2017 14:24:23 GMT-0700 (PDT)
+[debug] [2017-08-09T21:24:23.616Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-09T21:24:23.640Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-08-09T21:24:23.641Z] > authorizing via signed-in user
+[debug] [2017-08-09T21:24:23.644Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/przm-b4311  
+ Wed Aug 09 2017 14:24:23 GMT-0700 (PDT)
+[debug] [2017-08-09T21:24:24.186Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-09T21:24:24.189Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/przm-b4311/tokens  
+ Wed Aug 09 2017 14:24:24 GMT-0700 (PDT)
+[debug] [2017-08-09T21:24:24.747Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/trevor/Documents/LineWeight.nosync/przm'...
+[info] 
+[debug] [2017-08-09T21:24:24.751Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/przm-b4311  
+ Wed Aug 09 2017 14:24:24 GMT-0700 (PDT)
+[debug] [2017-08-09T21:24:25.178Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-09T21:24:25.179Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1072656352091/clients/_:getWebAppConfig  
+ Wed Aug 09 2017 14:24:25 GMT-0700 (PDT)
+[debug] [2017-08-09T21:24:25.666Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+
