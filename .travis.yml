@@ -4,7 +4,7 @@ node_js:
 dist: trusty
 branch:
   only:
-  - 'vue'
+  - 'master'
 
 before_script:
 - npm install
