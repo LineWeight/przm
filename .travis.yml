@@ -15,5 +15,5 @@ deploy:
   provider: firebase
   token: '${FIREBASE_TOKEN}'
   on:
-    branch: staging
+    branch: master
   project: 'przm-public'
