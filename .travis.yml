@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '7'
+dist: trusty
+branches:
+  only:
+  - vue
+before_script:
+- npm install
+script:
+- npm run build
+
+deploy:
+  provider: firebase
+  token:
+    secure: p/LUMeFMymobSwKoXcRsQU7+FeXHg3fjixXUo2jyI+tOApbzIc+JBNVUV7PAbwu1aIBRTHfU4GQuadianxliNVIRvKK5bP4JM5kfXVOaEcJAkeBsevs0hWk4OCCISmull7HiEj2zZ9mgdA1xuxhl04qTtZsj0jaZUuY1355JRrKueHNZ0slp3wjr8tNTsp7qWXaVP/wgypj6jqivc1grFU+zGaPHRndrQoGIITlkngZXrEo+BXZi5VNvNMOh9SEd4egS2ap7RvouFd1Go/eIXrH3YR6teFT+KY6OAdxjYb3w+HICEVld3bvSc//DucEPIyLirjmwDOKqw1O1HdBMteCUpiOW36trO+2qZ9YLyVlli7aYkg9VMVS3iCakIKGuOO9+p/a2ZpYop2Q+xsJyomnxz55uhIscAjKG2XlIru0fenOBHkAJbU0rQmF1FLJZ6c1WSIXA48YRFI5M1fi938wVe5GCqMoO2U8nh616FBN7R639BU7JMr+k5AAr69r3zsbbZpnY41G5PWmwhyTG7hbkAaW6YwbZ5M+H6XEtbV60rAMYulyuZ6DRSczL2anrBhS2PK6eqFhB+3TF9zgzNkW3Vojc0TaE87uytnmJHTFCheOtqmZPN770sqvaWLj0ZjW0tz08c0zYSi/Ok+kUfpyT6T9p8t/OKjSsn5IfhRQ=
+  project: "przm-staging"
+
