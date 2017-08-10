@@ -53,7 +53,6 @@ export default {
 				this.$bindAsObject('userPens', db.ref(`users/${user.uid}/pens`))
 			} else {
 				this.user = null
-				this.$unbind('userPens')
 			}
 		})
 	},
@@ -76,7 +75,7 @@ export default {
 		},
 		setFilterFlag(a) {
 			this.filterFlag = a;
-			console.log(a)
+			// console.log(a)
 		},
 		setSortFlag(a) {
 			this.sortFlag = a;
@@ -123,6 +122,7 @@ export default {
 
 		},
 		logOut() {
+			this.filterFlag = "200"
 			auth.signOut().then(function () {
 				// Sign-out successful.
 			}).catch(function (error) {
