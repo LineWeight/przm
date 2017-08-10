@@ -11,5 +11,9 @@ before_script:
 script:
 - npm run build
 
-after_success:
-- firebase deploy --token "$FIREBASE_TOKEN" -P production
+deploy:
+  provider: firebase
+  token: '${FIREBASE_TOKEN}'
+  on:
+    branch: staging
+  project: 'przm-public'
