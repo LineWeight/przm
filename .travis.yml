@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '7'
+dist: trusty
+branch:
+  only:
+  - 'master'
+
+before_script:
+- npm install
+script:
+- npm run build
+
+deploy:
+  provider: firebase
+  token: '${FIREBASE_TOKEN}'
+  on:
+    branch: master
+  project: 'przm-public'
