@@ -1,6 +1,0 @@
-{
-  "projects": {
-    "staging": "przm-staging",
-    "production": "przm-public"
-  }
-}
