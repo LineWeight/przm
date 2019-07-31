@@ -9,12 +9,16 @@ import { environment } from '../environments/environment'
 import { AppComponent } from './app.component';
 import { PenListComponent } from './components/pen-list/pen-list.component';
 import { PenComponent } from './components/pen/pen.component';
+import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
+import { ButtonGroupComponent } from './components/button-group/button-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PenListComponent,
-    PenComponent
+    PenComponent,
+    SidebarComponent,
+    ButtonGroupComponent
   ],
   imports: [
     BrowserModule,
