@@ -11,6 +11,7 @@ import { PenListComponent } from './components/pen-list/pen-list.component';
 import { PenComponent } from './components/pen/pen.component';
 import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
 import { ButtonGroupComponent } from './components/button-group/button-group.component';
+import { EventButtonComponent } from './components/event-button/event-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ButtonGroupComponent } from './components/button-group/button-group.com
     PenListComponent,
     PenComponent,
     SidebarComponent,
-    ButtonGroupComponent
+    ButtonGroupComponent,
+    EventButtonComponent
   ],
   imports: [
     BrowserModule,

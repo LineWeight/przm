@@ -1,5 +1,5 @@
 <div class="sidebar">
   <h1>PRZM</h1>
-  <app-button-group></app-button-group>
-  <app-button-group></app-button-group>
+  <app-button-group [group]="sort" [buttonSet]="sorts | async"></app-button-group>
+  <app-button-group [group]="filter" [buttonSet]="filters | async"></app-button-group>
 </div>

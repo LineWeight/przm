@@ -1,1 +1,1 @@
-<p>button-group works!</p>
+<button *ngFor="let b of buttonSet" (click)="onClick(b.slug)">{{ b.title }}</button>
