@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Filter } from '../models/Filter';
 import { Sort } from '../models/Sort';
@@ -15,7 +15,6 @@ export class DataService {
   getFilters() {
     return this.filters
   }
-
 
   getSorts() {
     return this.sorts

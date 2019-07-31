@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PenService } from '../../services/pen.service'
 import { Observable } from 'rxjs';
-import { map } from "rxjs/operators";
+import { map, filter } from "rxjs/operators";
 import { Pen } from 'src/app/models/Pen';
 
 @Component({
@@ -14,15 +14,17 @@ export class PenListComponent implements OnInit {
   pens: Observable<Pen[]>
 
   constructor(penService: PenService) {
-    this.pens = penService.getPens().pipe(
-      map(x => {
-        x.map(y => {
-          y.colorHex = this.rgbToHex(y.rgb)
-          return y
+    this.pens = penService.getPens()
+      .pipe(
+        map(x => {
+          x
+            .map(y => {
+              y.colorHex = this.rgbToHex(y.rgb)
+              return y
+            })
+          return x
         })
-        return x
-      }))
-
+      )
   }
 
   ngOnInit() {
@@ -36,5 +38,4 @@ export class PenListComponent implements OnInit {
       .reduce((prev, x) => prev + x, "#")
 
   }
-
 }

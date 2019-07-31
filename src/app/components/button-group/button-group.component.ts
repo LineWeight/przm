@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-group',
@@ -9,14 +9,17 @@ export class ButtonGroupComponent implements OnInit {
 
   @Input() buttonSet
   @Input() group
-
-  constructor() { }
+  @Output() buttonClicked: EventEmitter<any> = new EventEmitter<any>()
 
   ngOnInit() {
+
   }
 
   onClick(slug: string) {
-    console.log(slug)
+    this.buttonClicked.emit({
+      type: this.group,
+      slug
+    })
   }
 
 }

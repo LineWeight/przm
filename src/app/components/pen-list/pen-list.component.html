@@ -1,4 +1,6 @@
-<div class="penList">
-  <app-pen *ngFor="let pen of pens | async" [pen]="pen">
-  </app-pen>
+<div class="root">
+  <div class="penList">
+    <app-pen *ngFor="let pen of pens | async" [pen]="pen">
+    </app-pen>
+  </div>
 </div>

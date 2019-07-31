@@ -5,3 +5,8 @@
   grid-gap: 25px;
   margin: 25px;
 }
+
+.root {
+  display: flex;
+  flex-direction: row;
+}

@@ -9,9 +9,8 @@ import { environment } from '../environments/environment'
 import { AppComponent } from './app.component';
 import { PenListComponent } from './components/pen-list/pen-list.component';
 import { PenComponent } from './components/pen/pen.component';
-import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ButtonGroupComponent } from './components/button-group/button-group.component';
-import { EventButtonComponent } from './components/event-button/event-button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { EventButtonComponent } from './components/event-button/event-button.com
     PenComponent,
     SidebarComponent,
     ButtonGroupComponent,
-    EventButtonComponent
   ],
   imports: [
     BrowserModule,
