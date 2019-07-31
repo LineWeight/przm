@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Pen } from '../models/Pen';
+import { Pen } from '../../models/Pen';
 
 @Component({
   selector: 'app-pen',

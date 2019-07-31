@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/database';
-import { Pen } from '../models/Pen'
+import { Component, OnInit } from '@angular/core';
+import { PenService } from '../../services/pen.service'
 import { Observable } from 'rxjs';
+import { Pen } from 'src/app/models/Pen';
 
 @Component({
   selector: 'app-pen-list',
@@ -9,14 +9,15 @@ import { Observable } from 'rxjs';
   styleUrls: ['./pen-list.component.css']
 })
 export class PenListComponent implements OnInit {
-  pens: Observable<any[]>
 
-  constructor(db: AngularFireDatabase) {
-    this.pens = db.list('pens').valueChanges()
-    this.pens.subscribe(data => console.log(data))
+  pens: Observable<Pen[]>
+
+  constructor(penService: PenService) {
+    this.pens = penService.getPens()
   }
 
   ngOnInit() {
+
   }
 
 }
