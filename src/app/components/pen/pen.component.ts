@@ -9,10 +9,12 @@ import { Pen } from '../../models/Pen';
 export class PenComponent implements OnInit {
 
   @Input() pen: Pen;
+  colorHex: string;
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

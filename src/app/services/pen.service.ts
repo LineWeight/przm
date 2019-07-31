@@ -18,5 +18,4 @@ export class PenService {
   constructor(db: AngularFireDatabase) {
     this.pens = db.list<Pen>('pens').valueChanges()
   }
-
 }

@@ -3,4 +3,5 @@ export class Pen {
     colorId: number
     orgId: number
     rgb: number[]
+    colorHex?: string
 }

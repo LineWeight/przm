@@ -1,12 +1,10 @@
 <div class="pen">
-  <div class="colorArea">
-    <p>
-      {{ pen.colorId }}
-    </p>
+  <div class="colorArea" [ngStyle]="{'background': pen.colorHex}">
   </div>
-  <div class="nameArea">
-    <p>
-      {{ pen.name }}
-    </p>
-  </div>
+  <p class="colorId">
+    {{ pen.colorId }}
+  </p>
+  <p class="name">
+    {{ pen.name }}
+  </p>
 </div>
