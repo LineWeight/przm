@@ -8,11 +8,11 @@
       </div>
       <div class="buttons">
       <h3>Sort</h3>
-        <div class="button"  v-for="sort in sorts">
+        <div class="button"  :key="sort" v-for="sort in sorts">
           <actionArea :activeFlag="sortFlag" :changeEvent="'sortChanged'" :slug="sort.slug" :title="sort.title" @sortChanged="setSortFlag($event)"></actionArea>
         </div>
         <h3>Filter</h3>
-        <div class="button" v-for="filter in filters">
+        <div class="button" :key="filter" v-for="filter in filters">
           <actionArea :activeFlag="filterFlag" :changeEvent="'filterChanged'" :title="filter.title" :slug="filter.slug" @filterChanged="setFilterFlag($event)"></actionArea>
         </div>
 				<h3 v-if="isLoggedIn">{{user.displayName}}</h3>
@@ -28,9 +28,7 @@
       </div>
     </div>
   <div class="pens">
-    <template v-for="pen of organizedPens">
-      <pen :isInUserSet="isInUserSet(pen.colorId)" @penClicked="handlePenClicked($event)" :pen="pen"></pen>
-    </template>
+      <pen v-for="pen of organizedPens" v-bind:key="pen.colorId" :isInUserSet="isInUserSet(pen.colorId)" @penClicked="handlePenClicked($event)" :pen="pen"></pen>
   </div>
 
 </div>
@@ -79,17 +77,14 @@ export default {
 		},
 		setFilterFlag(a) {
 			this.filterFlag = a;
-			// console.log(a)
 		},
 		setSortFlag(a) {
 			this.sortFlag = a;
 		},
 		setEditState(a) {
-			// console.log(a);
 			this.isEditing = a;
 		},
 		handlePenClicked(penColorId) {
-      // console.log(penColorId)
 			if (this.isEditing) {
 				this.$firebaseRefs.userPens.child(penColorId).set(!this.userPens[penColorId] ? true : null)
       }
@@ -103,32 +98,21 @@ export default {
 		logInWithTwitter() {
 			let newUser = {}
 			auth.signInWithPopup(twitterProvider).then(function (result) {
-				// This gives you a the Twitter OAuth 1.0 Access Token and Secret.
-				// You can use these server side with your app's credentials to access the Twitter API.
 				var token = result.credential.accessToken;
 				var secret = result.credential.secret;
-				// The signed-in user info.
 				var user = result.user;
-				// ...
 			}).catch(function (error) {
-				// Handle Errors here.
 				var errorCode = error.code;
 				var errorMessage = error.message;
-				// The email of the user's account used.
 				var email = error.email;
-				// The firebase.auth.AuthCredential type that was used.
 				var credential = error.credential;
 				console.error(error)
-				// ...
 			});
-
 		},
 		logOut() {
 			this.filterFlag = "200"
 			auth.signOut().then(function () {
-				// Sign-out successful.
 			}).catch(function (error) {
-				// An error happened.
 				console.error(error)
 			});
 		}
