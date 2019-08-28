@@ -7,9 +7,9 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 })
 export class ButtonGroupComponent implements OnInit {
 
-  @Input() buttonSet
-  @Input() group
-  @Output() buttonClicked: EventEmitter<any> = new EventEmitter<any>()
+  @Input() buttonSet;
+  @Input() group;
+  @Output() buttonClicked: EventEmitter<any> = new EventEmitter<any>();
 
   ngOnInit() {
 
@@ -19,7 +19,7 @@ export class ButtonGroupComponent implements OnInit {
     this.buttonClicked.emit({
       type: this.group,
       slug
-    })
+    });
   }
 
 }

@@ -12,26 +12,26 @@ import { Filter } from '../models/Filter';
 
 export class PenService {
 
-  private sortSource = new Subject<string>()
-  private filterSource = new Subject<string>()
+  constructor(db: AngularFireDatabase) {
+    this.pens = db.list<Pen>('pens').valueChanges();
+  }
 
-  sort$ = this.sortSource.asObservable()
-  filter$ = this.filterSource.asObservable()
+  private sortSource = new Subject<string>();
+  private filterSource = new Subject<string>();
+
+  sort$ = this.sortSource.asObservable();
+  filter$ = this.filterSource.asObservable();
+
+  pens: Observable<Pen[]>;
 
   sortPens(slug: string) {
-    this.sortSource.next(slug)
+    this.sortSource.next(slug);
   }
   filterPens(slug: any) {
-    this.filterSource.next(slug)
+    this.filterSource.next(slug);
   }
-
-  pens: Observable<Pen[]>
 
   getPens() {
-    return this.pens
-  }
-
-  constructor(db: AngularFireDatabase) {
-    this.pens = db.list<Pen>('pens').valueChanges()
+    return this.pens;
   }
 }

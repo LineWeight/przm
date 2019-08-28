@@ -10,11 +10,8 @@ import { Observable } from 'rxjs';
 })
 
 export class AppComponent {
-  title = 'przm'
+  title = 'przm';
   constructor() {
 
-  }
-
-  ngOnInit() {
   }
 }

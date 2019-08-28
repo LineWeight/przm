@@ -9,19 +9,19 @@ import { Sort } from '../models/Sort';
 })
 export class DataService {
 
-  filters: Observable<Filter[]>
-  sorts: Observable<Sort[]>
+  filters: Observable<Filter[]>;
+  sorts: Observable<Sort[]>;
 
   getFilters() {
-    return this.filters
+    return this.filters;
   }
 
   getSorts() {
-    return this.sorts
+    return this.sorts;
   }
 
   constructor(db: AngularFireDatabase) {
-    this.filters = db.list<Filter>('data/filters').valueChanges()
-    this.sorts = db.list<Sort>('data/sorts').valueChanges()
+    this.filters = db.list<Filter>('data/filters').valueChanges();
+    this.sorts = db.list<Sort>('data/sorts').valueChanges();
   }
 }
