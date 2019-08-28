@@ -4,7 +4,7 @@
 		</div>
 		<div class="penInfo">
 			<p class="colorId">{{pen.colorId}}</p>
-			<p :class="{lightText: this.isInUserSet}" class="name">{{pen.name}}</p>
+			<p :class="{lightText: isInUserSet}" class="name">{{pen.name}}</p>
 		</div>
 	</div>
 </template>
@@ -27,7 +27,6 @@ export default {
 		},
 		click() {
 			this.$emit("penClicked", this.pen.colorId)
-
 		}
 	},
 	computed: {

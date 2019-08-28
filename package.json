@@ -1,25 +1,9 @@
 {
-	"name": "boiler",
+	"name": "przm",
 	"version": "1.0.0",
-	"description": "Boiler plate for all my favorite kinds of things",
+	"description": "",
 	"main": "index.js",
-	"devDependencies": {
-		"babel-core": "^6.25.0",
-		"babel-loader": "^7.1.1",
-		"babel-preset-env": "^1.6.0",
-		"css-loader": "^0.28.4",
-		"eslint-plugin-vue": "^3.11.0",
-		"html-loader": "^0.4.5",
-		"html-webpack-plugin": "^2.29.0",
-		"raw-loader": "^0.5.1",
-		"reset-css": "^2.2.0",
-		"style-loader": "^0.18.2",
-		"vue": "^2.4.1",
-		"vue-loader": "^12.2.2",
-		"vue-template-compiler": "^2.4.1",
-		"webpack": "^3.3.0",
-		"webpack-dev-server": "^3.1.11"
-	},
+	"devDependencies": {},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "webpack-dev-server --open",
@@ -37,8 +21,23 @@
 	},
 	"homepage": "https://github.com/trevorsargent/boiler#readme",
 	"dependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@vue/cli": "^3.11.0",
+		"babel-loader": "^8.0.6",
+		"css-loader": "^3.2.0",
 		"eslint": "^4.18.2",
-		"firebase": "^4.2.0",
-		"vuefire": "^1.4.3"
+		"firebase": "^6.4.2",
+		"html-webpack-plugin": "^3.2.0",
+		"raw-loader": "^3.1.0",
+		"reset-css": "^4.0.1",
+		"style-loader": "^1.0.0",
+		"vue": "^2.6.10",
+		"vue-loader": "^15.7.1",
+		"vue-template-compiler": "^2.6.10",
+		"vuefire": "^2.1.2",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.7",
+		"webpack-dev-server": "^3.8.0"
 	}
 }

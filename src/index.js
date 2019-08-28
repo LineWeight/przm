@@ -3,7 +3,7 @@
 import Vue from 'vue'
 
 // import tooling
-import VueFire from 'vuefire'
+import { rtdbPlugin } from 'vuefire'
 
 // import components
 import App from './App.vue'
@@ -14,7 +14,7 @@ import 'reset-css/reset.css'
 // main style file
 import './style.css'
 
-Vue.use(VueFire)
+Vue.use(rtdbPlugin)
 
 new Vue({
 	el: '#app',

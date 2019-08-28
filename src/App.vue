@@ -1,13 +1,12 @@
-<template lang="html">
+<template>
   <div class="wrapper">
 	
-  <div  class="sidebar">
-    <div class="header">
-      <h1>{{title}}</h1>
-      <h2>{{subtitle}}</h2>
-			
-    </div>
-    <div class="buttons">
+    <div  class="sidebar">
+      <div class="header">
+        <h1>{{title}}</h1>
+        <h2>{{subtitle}}</h2>
+      </div>
+      <div class="buttons">
       <h3>Sort</h3>
         <div class="button"  v-for="sort in sorts">
           <actionArea :activeFlag="sortFlag" :changeEvent="'sortChanged'" :slug="sort.slug" :title="sort.title" @sortChanged="setSortFlag($event)"></actionArea>
@@ -27,14 +26,15 @@
 
 				</div>
       </div>
-      </div>
-  
+    </div>
   <div class="pens">
     <template v-for="pen of organizedPens">
       <pen :isInUserSet="isInUserSet(pen.colorId)" @penClicked="handlePenClicked($event)" :pen="pen"></pen>
     </template>
   </div>
-  </div>
+
+</div>
+
 </template>
 
 <script>
@@ -50,7 +50,7 @@ export default {
 			// console.log(user)
 			if (user) {
 				this.user = user
-				this.$bindAsObject('userPens', db.ref(`users/${user.uid}/pens`))
+				this.$rtdbBind('userPens', db.ref(`users/${user.uid}/pens`))
 			} else {
 				this.user = null
 			}
@@ -61,12 +61,16 @@ export default {
 		pen, actionArea
 	},
 	data: () => ({
+    sorts:[], 
+    pens: [],
+    filters: [],
 		title: "Przm",
 		subtitle: "Reference Guide for Prismacolor Premium Art Markers",
 		user: null,
 		isEditing: false,
 		filterFlag: "200",
-		sortFlag: "orgId",
+    sortFlag: "orgId",
+    recentClick: null
 	}),
 
 	methods: {
@@ -85,17 +89,15 @@ export default {
 			this.isEditing = a;
 		},
 		handlePenClicked(penColorId) {
-			// console.log(penColorId)
+      // console.log(penColorId)
 			if (this.isEditing) {
 				this.$firebaseRefs.userPens.child(penColorId).set(!this.userPens[penColorId] ? true : null)
-			}
+      }
+      
 		},
 		isInUserSet(id) {
 			if (this.userPens) {
-
-				return this.userPens[id];
-			} else {
-				return false;
+				return !!this.userPens[id];
 			}
 		},
 		logInWithTwitter() {
@@ -132,15 +134,9 @@ export default {
 		}
 	},
 	firebase: {
-		pens: {
-			source: db.ref('pens')
-		},
-		filters: {
-			source: db.ref('data/filters')
-		},
-		sorts: {
-			source: db.ref('data/sorts')
-		}
+		pens:  db.ref('pens'),
+		filters: db.ref('data/filters'),
+		sorts:  db.ref('data/sorts'),
 	},
 	computed: {
 		organizedPens: function () {
@@ -167,9 +163,7 @@ export default {
 			return !!this.user
 		}
 	}
-
 }
-
 </script>
 
 <style>
